@@ -212,13 +212,14 @@
 <li>不包括$\varepsilon$在内的字母表$T$上的所有字符串集合$T^{+}$</li>
 <li>字母表$T$上的语言$L$是$T^*$的子集</li>
 <li>两个语言的积：$L_1$和$L_2$的积$L_1 \cdot L_2$，是由$L_1$和$L_2$的字符串连接所构成的字符串的集合；<br><strong>语言的积不满足交换律</strong></li>
-<li>语言的幂：<br>$$L^0={\varepsilon} \<br>L^n=L \cdot L^n-1$$</li>
-<li>语言的闭包与正闭包$$L^*=\displaystyle\bigcup_{n\geqslant0} L^n\ L^+=\displaystyle\bigcup_{n\geqslant1}L^n$$</li>
+<li>语言的幂：<script type="math/tex; mode=display">L^0={\varepsilon} \\
+L^n=L \cdot L^n-1</script></li>
+<li>语言的闭包与正闭包<script type="math/tex">L^*=\displaystyle\bigcup_{n\geqslant0} L^n\\ L^+=\displaystyle\bigcup_{n\geqslant1}L^n</script></li>
 <li>文法 定义语言的数学模型</li>
 <li>使用Chomsky文法体系定义语言：文法G是一个四元组，$G=(N,T,P,S)$<br>（1）$N$ 非终结符的有限集合<br>（2）$T$ 终结符的有限集合，且$N \bigcup T=\varnothing$<br>（3）$P$ 形式为$\alpha \rarr \beta$的生成式有限集合，且$\alpha ∈(N \bigcup T)^+,\beta ∈( N \bigcup T)^*$，$\alpha$至少含一个非终结符号，意味着$\alpha$不能为空串而且不能全由终结符组成<br>（4）$S$ 起始符，$S \in N$  </li>
 <li>推导：直接推导（长度为1）$\alpha \rArr \alpha_0$，长度为0的推导$\alpha=\alpha_0$，长度大于0的推导$\alpha \xRightarrow[G]{*}\alpha_0$</li>
 <li>句型：字符串$\alpha$是文法$G$的句型当且仅当$S\xRightarrow[G]{<em>}\alpha$且$\alpha \in (N \bigcup T)^</em>$</li>
-<li>由文法产生的语言$L(G)={\omega | \omega \in T^<em>,S\xRightarrow[G]{</em>} \omega }$，即$L(G)$中的一个字符必须由$S$推导出，由终结符组成</li>
+<li>由文法产生的语言$L(G)=\{\omega | \omega \in T^<em>,S\xRightarrow[G]{</em>} \omega \}$，即$L(G)$中的一个字符必须由$S$推导出，由终结符组成</li>
 <li>文法分类<br>（1）0型：无限制 （但也有基础限制）<br>（2）1型：上下文有关文法。生成式的形式为$\alpha \rarr \beta$，其中$|\alpha| \leqslant |\beta|$，且$\alpha,\beta \in (N \bigcup T)^+$<br>（3）2型：上下文无关文法。生成式的形式为$A \rarr \alpha,A \in N, \alpha \in ()$</li>
 <li></li>
 </ol>
@@ -460,16 +461,12 @@
       
           <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
       
@@ -637,6 +634,8 @@
 
 
 
+
+  
 
   
 
