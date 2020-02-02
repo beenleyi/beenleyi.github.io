@@ -48,10 +48,12 @@
 
 <link href="https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css" rel="stylesheet">
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+  <meta name="description" content="关于平凡的人生与技术">
+<meta property="og:type" content="website">
+<meta property="og:title" content="路漫漫">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="路漫漫">
+<meta property="og:description" content="关于平凡的人生与技术">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="Beenle Yi">
 <meta name="twitter:card" content="summary">
@@ -68,7 +70,7 @@
   };
 </script>
 
-  <title>Hexo</title>
+  <title>路漫漫</title>
   
 
 
@@ -112,10 +114,11 @@
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">路漫漫</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+        <p class="site-subtitle">Beenle Yi的博客</p>
   </div>
 
   <div class="site-nav-toggle">
@@ -167,241 +170,21 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/27/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA%E7%AC%94%E8%AE%B0/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/02/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA%E7%9A%84%E5%85%B3%E7%B3%BB/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="Beenle Yi">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="关于平凡的人生与技术">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="路漫漫">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2020/01/27/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">automata and language</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-01-27 21:25:29" itemprop="dateCreated datePublished" datetime="2020-01-27T21:25:29+08:00">2020-01-27</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-01-29 17:18:02" itemprop="dateModified" datetime="2020-01-29T17:18:02+08:00">2020-01-29</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><strong>由于未能解决hexo对于数学符号的渲染问题，转见CSDN博客https://blog.csdn.net/weixin_43562081/article/details/104094782</strong></p>
-<h1 id="语言与文法"><a class="markdownIt-Anchor" href="#语言与文法"></a> 语言与文法</h1>
-<h2 id="定义"><a class="markdownIt-Anchor" href="#定义"></a> 定义</h2>
-<ol>
-<li>字母表<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">T</span></span></span></span></li>
-<li>字符串<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>t</mi><mo separator="true">,</mo><mi>u</mi><mo separator="true">,</mo><mi>v</mi><mo separator="true">,</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo separator="true">,</mo><mi>z</mi></mrow><annotation encoding="application/x-tex">t,u,v,x,y,z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.61508em;"></span><span class="strut bottom" style="height:0.80952em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit">t</span><span class="mpunct">,</span><span class="mord mathit">u</span><span class="mpunct">,</span><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="mpunct">,</span><span class="mord mathit">x</span><span class="mpunct">,</span><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mpunct">,</span><span class="mord mathit" style="margin-right:0.04398em;">z</span></span></span></span>及其长度</li>
-<li>字符串的转置\widetilde{\omega} （上加波浪线）</li>
-<li>包括<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>ε</mi></mrow><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">ε</span></span></span></span>在内的字母表<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">T</span></span></span></span>上的所有字符串集合<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>T</mi><mo>∗</mo></msup></mrow><annotation encoding="application/x-tex">T^*</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.688696em;"></span><span class="strut bottom" style="height:0.688696em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right:0.13889em;">T</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord">∗</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></li>
-<li>不包括<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>ε</mi></mrow><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">ε</span></span></span></span>在内的字母表<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">T</span></span></span></span>上的所有字符串集合<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>T</mi><mrow><mo>+</mo></mrow></msup></mrow><annotation encoding="application/x-tex">T^{+}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.771331em;"></span><span class="strut bottom" style="height:0.771331em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right:0.13889em;">T</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord">+</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></li>
-<li>字母表<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">T</span></span></span></span>上的语言<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>L</mi></mrow><annotation encoding="application/x-tex">L</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">L</span></span></span></span>是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>T</mi><mo>∗</mo></msup></mrow><annotation encoding="application/x-tex">T^*</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.688696em;"></span><span class="strut bottom" style="height:0.688696em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right:0.13889em;">T</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord">∗</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>的子集</li>
-<li>两个语言的积：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">L_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">L</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">1</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">L_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">L</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>的积<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub><mo>⋅</mo><msub><mi>L</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">L_1 \cdot L_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">L</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">1</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mbin">⋅</span><span class="mord"><span class="mord mathit">L</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>，是由<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">L_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">L</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">1</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">L_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">L</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>的字符串连接所构成的字符串的集合；<br />
-<strong>语言的积不满足交换律</strong></li>
-<li>语言的幂：$$L^0={\varepsilon}$$ $$L^n=L \cdot L<sup>n-1</sup>$$</li>
-<li>语言的闭包与正闭包$$L<sup>*=\displaystyle\bigcup_{n\geqslant0}L</sup>{n} \ L^+= \displaystyle\bigcup_{n\geqslant 1}L^n$$</li>
-<li>文法 定义语言的数学模型</li>
-<li>使用Chomsky文法体系定义语言：文法G是一个四元组，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi><mo>=</mo><mo>(</mo><mi>N</mi><mo separator="true">,</mo><mi>T</mi><mo separator="true">,</mo><mi>P</mi><mo separator="true">,</mo><mi>S</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">G=(N,T,P,S)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit">G</span><span class="mrel">=</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="mpunct">,</span><span class="mord mathit" style="margin-right:0.13889em;">T</span><span class="mpunct">,</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mpunct">,</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mclose">)</span></span></span></span><br />
-（1）<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.10903em;">N</span></span></span></span> 非终结符的有限集合<br />
-（2）<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">T</span></span></span></span> 终结符的有限集合，且<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi><mo>⋃</mo><mi>T</mi><mo>=</mo><mi mathvariant="normal">∅</mi></mrow><annotation encoding="application/x-tex">N \bigcup T=\varnothing</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1.00001em;vertical-align:-0.25001em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="op-symbol small-op mop" style="top:-0.0000050000000000050004em;">⋃</span><span class="mord mathit" style="margin-right:0.13889em;">T</span><span class="mrel">=</span><span class="mord mathrm">∅</span></span></span></span><br />
-（3）<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span></span></span></span> 形式为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi><mo>→</mo><mi>β</mi></mrow><annotation encoding="application/x-tex">\alpha \rightarrow \beta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.0037em;">α</span><span class="mrel">→</span><span class="mord mathit" style="margin-right:0.05278em;">β</span></span></span></span>的生成式有限集合，且<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi><mo>∈</mo><mo>(</mo><mi>N</mi><mo>⋃</mo><mi>T</mi><msup><mo>)</mo><mrow><mo>+</mo></mrow></msup></mrow><annotation encoding="application/x-tex">\alpha \in (N \bigcup T)^{+}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.771331em;"></span><span class="strut bottom" style="height:1.021341em;vertical-align:-0.25001em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.0037em;">α</span><span class="mrel">∈</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="op-symbol small-op mop" style="top:-0.0000050000000000050004em;">⋃</span><span class="mord mathit" style="margin-right:0.13889em;">T</span><span class="mclose"><span class="mclose">)</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord">+</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span> , <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>β</mi><mo>∈</mo><mo>(</mo><mi>N</mi><mo>⋃</mo><mi>T</mi><msup><mo>)</mo><mo>∗</mo></msup></mrow><annotation encoding="application/x-tex">\beta\in( N \bigcup T)^*</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1.00001em;vertical-align:-0.25001em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05278em;">β</span><span class="mrel">∈</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="op-symbol small-op mop" style="top:-0.0000050000000000050004em;">⋃</span><span class="mord mathit" style="margin-right:0.13889em;">T</span><span class="mclose"><span class="mclose">)</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord">∗</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.0037em;">α</span></span></span></span>至少含一个非终结符号，意味着<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.0037em;">α</span></span></span></span>不能为空串而且不能全由终结符组成<br />
-（4）<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span></span></span></span> 起始符，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><mo>∈</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">S \in N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.72243em;vertical-align:-0.0391em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mrel">∈</span><span class="mord mathit" style="margin-right:0.10903em;">N</span></span></span></span></li>
-<li>推导：直接推导（长度为1）<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi><mo>⇒</mo><msub><mi>α</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\alpha \Rightarrow \alpha_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.0037em;">α</span><span class="mrel">⇒</span><span class="mord"><span class="mord mathit" style="margin-right:0.0037em;">α</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.0037em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">0</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>，长度为0的推导<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi><mo>=</mo><msub><mi>α</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\alpha=\alpha_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.0037em;">α</span><span class="mrel">=</span><span class="mord"><span class="mord mathit" style="margin-right:0.0037em;">α</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.0037em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">0</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>，长度大于0的推导\alpha \xRightarrow[G]{*}\alpha_0</li>
-<li>句型：字符串<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.0037em;">α</span></span></span></span>是文法<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">G</span></span></span></span>的句型当且仅当S\xRightarrow[G]{*} \alpha且<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi><mo>∈</mo><mo>(</mo><mi>N</mi><mo>⋃</mo><mi>T</mi><msup><mo>)</mo><mrow><mo>∗</mo></mrow></msup></mrow><annotation encoding="application/x-tex">\alpha \in (N \bigcup T)^{*}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1.00001em;vertical-align:-0.25001em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.0037em;">α</span><span class="mrel">∈</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="op-symbol small-op mop" style="top:-0.0000050000000000050004em;">⋃</span><span class="mord mathit" style="margin-right:0.13889em;">T</span><span class="mclose"><span class="mclose">)</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord">∗</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></li>
-<li>由文法产生的语言L(G)=\{\omega | \omega \in T^{*},S \xRightarrow [G] {*} \omega \}，即 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>L</mi><mo>(</mo><mi>G</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">L(G)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit">L</span><span class="mopen">(</span><span class="mord mathit">G</span><span class="mclose">)</span></span></span></span> 中的一个字符必须由 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">S</span></span></span></span> 推导出，由终结符组成</li>
-<li>文法分类<br />
-（1）0型：无限制 （但也有基础限制）对应无限制性语言<br />
-（2）1型：上下文有关文法。生成式的形式为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi><mo>→</mo><mi>β</mi></mrow><annotation encoding="application/x-tex">\alpha \rightarrow \beta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.0037em;">α</span><span class="mrel">→</span><span class="mord mathit" style="margin-right:0.05278em;">β</span></span></span></span>，其中<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">∣</mi><mi>α</mi><mi mathvariant="normal">∣</mi><mo>⩽</mo><mi mathvariant="normal">∣</mi><mi>β</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|\alpha| \leqslant |\beta|</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">∣</span><span class="mord mathit" style="margin-right:0.0037em;">α</span><span class="mord mathrm">∣</span><span class="mrel amsrm">⩽</span><span class="mord mathrm">∣</span><span class="mord mathit" style="margin-right:0.05278em;">β</span><span class="mord mathrm">∣</span></span></span></span>，且<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi><mo separator="true">,</mo><mi>β</mi><mo>∈</mo><mo>(</mo><mi>N</mi><mo>⋃</mo><mi>T</mi><msup><mo>)</mo><mrow><mo>+</mo></mrow></msup></mrow><annotation encoding="application/x-tex">\alpha,\beta \in (N \bigcup T)^{+}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.771331em;"></span><span class="strut bottom" style="height:1.021341em;vertical-align:-0.25001em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.0037em;">α</span><span class="mpunct">,</span><span class="mord mathit" style="margin-right:0.05278em;">β</span><span class="mrel">∈</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="op-symbol small-op mop" style="top:-0.0000050000000000050004em;">⋃</span><span class="mord mathit" style="margin-right:0.13889em;">T</span><span class="mclose"><span class="mclose">)</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord">+</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span> 对应上下文有关语言<br />
-<strong>典型特征：左边比右边短</strong><br />
-（3）2型：上下文无关文法。生成式的形式为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mo>→</mo><mi>α</mi><mo separator="true">,</mo><mi>A</mi><mo>∈</mo><mi>N</mi><mo separator="true">,</mo><mi>α</mi><mo>∈</mo><mo>(</mo><mi>N</mi><mo>⋃</mo><mi>T</mi><msup><mo>)</mo><mo>∗</mo></msup></mrow><annotation encoding="application/x-tex">A \rightarrow \alpha,A \in N, \alpha \in (N \bigcup T)^*</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1.00001em;vertical-align:-0.25001em;"></span><span class="base textstyle uncramped"><span class="mord mathit">A</span><span class="mrel">→</span><span class="mord mathit" style="margin-right:0.0037em;">α</span><span class="mpunct">,</span><span class="mord mathit">A</span><span class="mrel">∈</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="mpunct">,</span><span class="mord mathit" style="margin-right:0.0037em;">α</span><span class="mrel">∈</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="op-symbol small-op mop" style="top:-0.0000050000000000050004em;">⋃</span><span class="mord mathit" style="margin-right:0.13889em;">T</span><span class="mclose"><span class="mclose">)</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord">∗</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span> 对应上下文无关语言<br />
-<strong>典型特征：左边都是非终结符</strong><br />
-（4）3型：正则文法。生成式的形式为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mo>→</mo><mi>ω</mi><mi>B</mi></mrow><annotation encoding="application/x-tex">A \rightarrow \omega B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">A</span><span class="mrel">→</span><span class="mord mathit" style="margin-right:0.03588em;">ω</span><span class="mord mathit" style="margin-right:0.05017em;">B</span></span></span></span>或<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mo>→</mo><mi>ω</mi><mo separator="true">,</mo><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo>∈</mo><mi>N</mi><mo separator="true">,</mo><mi>ω</mi><mo>∈</mo><msup><mi>T</mi><mo>∗</mo></msup></mrow><annotation encoding="application/x-tex">A \rightarrow \omega,A,B \in N, \omega \in T^*</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.688696em;"></span><span class="strut bottom" style="height:0.8831359999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit">A</span><span class="mrel">→</span><span class="mord mathit" style="margin-right:0.03588em;">ω</span><span class="mpunct">,</span><span class="mord mathit">A</span><span class="mpunct">,</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mrel">∈</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="mpunct">,</span><span class="mord mathit" style="margin-right:0.03588em;">ω</span><span class="mrel">∈</span><span class="mord"><span class="mord mathit" style="margin-right:0.13889em;">T</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord">∗</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>称右线性文法，如果生成式的形式为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mo>→</mo><mi>B</mi><mi>ω</mi></mrow><annotation encoding="application/x-tex">A \rightarrow B\omega</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">A</span><span class="mrel">→</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mord mathit" style="margin-right:0.03588em;">ω</span></span></span></span>或<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mo>→</mo><mi>ω</mi></mrow><annotation encoding="application/x-tex">A \rightarrow \omega</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">A</span><span class="mrel">→</span><span class="mord mathit" style="margin-right:0.03588em;">ω</span></span></span></span>称左线性文法 对应正则语言<br />
-<strong>总结：3型<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∈</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.5391em;"></span><span class="strut bottom" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="base textstyle uncramped"><span class="mrel">∈</span></span></span></span> 2型<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∈</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.5391em;"></span><span class="strut bottom" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="base textstyle uncramped"><span class="mrel">∈</span></span></span></span> 1型<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∈</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.5391em;"></span><span class="strut bottom" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="base textstyle uncramped"><span class="mrel">∈</span></span></span></span> 0型</strong></li>
-<li>巴科斯范式（BNF, Backus Normal Form）：讨论某种程序设计语言语法的一种元语言。使用<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>:</mo><mo>:</mo><mo>=</mo></mrow><annotation encoding="application/x-tex">::=</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mrel">:</span><span class="mrel">:</span><span class="mrel">=</span></span></span></span>代替生成式中的<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.36687em;"></span><span class="strut bottom" style="height:0.36687em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mrel">→</span></span></span></span>，所有的非终结符号都用<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>&lt;</mo><mo>&gt;</mo></mrow><annotation encoding="application/x-tex">&lt;&gt;</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.5391em;"></span><span class="strut bottom" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="base textstyle uncramped"><span class="mrel">&lt;</span><span class="mrel">&gt;</span></span></span></span>括起来，左端相同的生成式的右端使用<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">∣</span></span></span></span>隔开后合并成一个生成式。</li>
-<li>语法图：方框表示非终结符号，圆框表示终结符号</li>
-</ol>
-<h2 id="能力要求"><a class="markdownIt-Anchor" href="#能力要求"></a> 能力要求</h2>
-<ol>
-<li>字符串的运算和闭包计算</li>
-<li>由文法推导语言</li>
-<li>证明从文法推导出的语言正确，证明集合等价需要证明左边包含右边，右边包含左边</li>
-<li>判断文法分类</li>
-<li>构造文法</li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/27/automata/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Beenle Yi">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/27/automata/" class="post-title-link" itemprop="url">automata</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-01-27 15:17:12" itemprop="dateCreated datePublished" datetime="2020-01-27T15:17:12+08:00">2020-01-27</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/27/COD_Ch2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Beenle Yi">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/27/COD_Ch2/" class="post-title-link" itemprop="url">COD_Ch2</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-01-27 13:15:59" itemprop="dateCreated datePublished" datetime="2020-01-27T13:15:59+08:00">2020-01-27</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/27/welcome/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Beenle Yi">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/27/welcome/" class="post-title-link" itemprop="url">welcome!</a>
+            <a href="/2020/02/02/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA%E7%9A%84%E5%85%B3%E7%B3%BB/" class="post-title-link" itemprop="url">正则表达式与自动机的关系</a>
         </h1>
 
         <div class="post-meta">
@@ -412,7 +195,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-01-27 12:35:23 / Modified: 12:36:06" itemprop="dateCreated datePublished" datetime="2020-01-27T12:35:23+08:00">2020-01-27</time>
+              <time title="Created: 2020-02-02 20:13:36 / Modified: 20:16:13" itemprop="dateCreated datePublished" datetime="2020-02-02T20:13:36+08:00">2020-02-02</time>
             </span>
 
           
@@ -426,7 +209,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>hello Jason, you are my first visitor. Love you~</p>
+          <h2 id="正则表达式与自动机的关系"><a href="#正则表达式与自动机的关系" class="headerlink" title="正则表达式与自动机的关系"></a>正则表达式与自动机的关系</h2><p>前面已经证明了$NFA$</p>
 
       
     </div>
@@ -446,21 +229,21 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/27/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/01/%E3%80%8A%E5%B9%B3%E5%87%A1%E7%9A%84%E4%B8%96%E7%95%8C%E3%80%8B%E6%9D%82%E8%B0%88/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="Beenle Yi">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="关于平凡的人生与技术">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="路漫漫">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2020/01/27/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+            <a href="/2020/02/01/%E3%80%8A%E5%B9%B3%E5%87%A1%E7%9A%84%E4%B8%96%E7%95%8C%E3%80%8B%E6%9D%82%E8%B0%88/" class="post-title-link" itemprop="url">《平凡的世界》杂谈</a>
         </h1>
 
         <div class="post-meta">
@@ -470,8 +253,15 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2020-01-27 09:50:49" itemprop="dateCreated datePublished" datetime="2020-01-27T09:50:49+08:00">2020-01-27</time>
+              <time title="Created: 2020-02-01 21:01:58" itemprop="dateCreated datePublished" datetime="2020-02-01T21:01:58+08:00">2020-02-01</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-02 17:32:52" itemprop="dateModified" datetime="2020-02-02T17:32:52+08:00">2020-02-02</time>
+              </span>
 
           
 
@@ -484,20 +274,379 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
-<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+          <h3 id="《平凡的世界》杂谈"><a href="#《平凡的世界》杂谈" class="headerlink" title="《平凡的世界》杂谈"></a>《平凡的世界》杂谈</h3><p>匆匆读完后，书中的人物占据了我的大脑，看不进别的书，不如干脆倾诉一番。</p>
+<p>晓霞的死最让我不能释怀。我多么期待她和少平能最终走到一起，显然只要他们愿意，父母即使有一定担心也不会反对————这不仅仅是一种关于自己钟爱的男女人物的爱情故事有完美结局的期待，更是希望自己的“理想主义”能够在如此写实的书中有实证……但现实终究是现实，像晓霞这样热烈的人，还是记者职业 （记者是她的本命职业），很难在日后不遇到什么危险，但书中的危险却是死亡！还是让人难以接受！虽然之前我就知道晓霞会死，在看了一个剧透的文章之后，但还是太突然了……</p>
+<p>当然，这种残忍对读者来说算不上什么，对少平和晓霞的家人来说，才是真正的打击。少平同样热烈地投入到他们的爱情之中，读时常常为这美好的爱情故事感动——他们是多么好的人啊，一个出身优越但却以更强烈的热情回馈世界的女孩，一个农民出身却在努力探索生命的意义的男孩，他们都像灿烂的朝阳。把幸福撕成碎片，这大概就是悲剧吧。少平再也不会遇到另一个晓霞，他将拥有怎么的女孩呢，或是不再拥有？金波！金波有着同样的不幸，我只恨他为什么没有早点去找他的藏族姑娘！军队的纪律太严酷了……噢，平凡的世界，那些幸福的美好的为什么终成泡影？一切还是回归平凡……是的，所有人都曾想追求他们的幸福，最后呢，细细想来确实没有一个是有着落的。</p>
+<p>首先继续谈少平和晓霞两位。少平和晓霞的岔道口最先是高考，由于文革，他们本身没有花费足够的精力学习，而晓霞之所以还能考上大学，很大程度上是家庭的影响，少平学习之余的心思是家庭的困难，当然也有读书，但并未有精力关注到那时候并不被看重的课业，而晓霞显然不同，这也是为什么只有晓霞和顾养民最终考上了大学。少平这一代，和少安不同，又和兰香不同——三兄妹，就是三个年代的故事，即使他们或许只相差了几岁，但在那风起云涌的年代里，同时也有长子和幼子责任有别的原因（以及也有智力和兴趣的原因吧！兰香！）最终，每个人的命运却是相差甚远。但我们不能忽视，读大学并不是一个多么“非黑即白”的事情。少平没有去读大学，但也在努力地开拓自己的人生；而且，他完全有可能去公家————那在某种程度上，也是和大学生差不多了！但他却没有做这样的选择，这是因为他有自己的信念。这其实比受过高等教育更为难能可贵，也是因此，晓霞才深深地爱上了这个“挖矿的男人”。我们看到，一个从农民出身的人，最终的思想境界却要比普通农民高得不知道多少！</p>
+<p>这归功于何处呢，文革耽误了那一代人，但他自己却是一个爱书的人————我翻了好久，居然在第二章，就是讲述少平第一次看书。这倒是一个无意识的事情，偶然的机会打开《钢铁是怎样炼成的》，而后就养成了读书的习惯。当我看到这里，感觉特别亲切，因为我看的第一本小说也是《钢铁是怎样炼成的》。我还记得很清楚，和爸爸去书店买书，我指着这本《钢铁是怎样炼成的》跟爸爸说想买，爸爸很疑惑问这本书是讲什么的，我那时其实也不知道……我只听说这是一本很好的书，所以也想看看。我很高兴爸爸当时就答应了！（大概是自己以前也不常要点什么，第一次要求买什么东西，倒是有点担心，而且自己连要买的东西是什么都不知道，甚至有点怀疑就是一本炼钢的书！那时候好像才三年级，我还不知道父母在教育这件事上花钱是很乐意的）这开启了我的看书之旅，和少平一样。《钢铁是怎样炼成的》当时也很大程度上影响了我，我很快看完，发现了很多————小说是这样的！书有这么大的世界！人可以这样活！诚然如此，一个人所见到的东西会很大程度上影响他。书籍影响着少平，正如影响着我。如今有些时候，我在想有些思想和做人的准则是从哪里来的，答案都是小时候看的书中。那是最容易受到影响的年纪，所谓的“人最初看到的是什么，他就会成为什么”之类意思的断言，大概是这个道理。那时候看书，我和少平一样盲目，不存在对书的批判，只是完全接受，而且觉得书上的似乎都对。还好那时候读的书都是好的，或许也正是因为那时候读的书都是好的，也不存在和原价值观冲突的地方（事实上，应该是不相交的层次），总之到现在，我却仍然保留着当初留下的很多习惯和想法。少平显然也是的，他勇敢地探索人生的意义，很大程度上也是由于书的影响。</p>
+<p>但我并不能想明白，为什么有的人爱书，有的人不爱书。是怎样的性格导致这种区别呢？抑或是，大家都爱看那些精彩的故事，但看完之后是否思考，是否愿意改变，是否有能力和以前的习惯作斗争……是这些在区分着人？我想或许是后者，那就是思维的勤奋或是懒惰，实践的决绝或是畏缩了。或许还有，一个人有没有做好改变的准备。我很庆幸，我和少平一样是接受改变的人。</p>
+<p>再说说我最爱的晓霞。热情而独立的晓霞，她的职业也曾经是我的理想！那时候产生这样的想法或许是看完《看见》之后，当然柴静在书中的角色并不是我对记者的所有期待。之所以喜欢记者，一方面是这种闯世界的感觉（我大概是一个喜欢奔波的人……），可以见到各种各样的人，去到各种各样的地方，这实在是太美妙的一件事！（或许记者的现实并没有这么美好）另一方面是，记者能够在第一线分辨黑白，匡扶公正，给予关怀，再用文笔感化世人……噢天呐，这简直再好不过了！这似乎是社会性的我的理想，但整体的我却没有做这个选择……而晓霞确实很适合，她在这方面也很出色。我很敬佩的是，晓霞在社会的洗礼中，从高中到工作，似乎没有什么变化————她还是那样的热情，对待事情还是那样的坚定有主见，更不要说在洪水前感到害怕。这是为什么呢？代入自己到那场洪水和那个孩子面前中，我大概会开始计算————这个孩子还能撑多久；现在请求哪一方面的帮助可以拯救孩子（因为她身边就是县长，之前已经调度过武警去了）；如果我自己去救，多大把握可以救到孩子，多大把握可以保住自己的性命等等————但这显然就是一个理工科生的思维，计算付出和收益。但晓霞是一个彻底的浪漫主义者呀！她深深地信仰奉献精神，是的，她是一位精神伟人，我想她所认可的书中人物一定也是这样做的。</p>
+<p>我们在悲痛一位位英雄逝世的时候，无论英雄是对这个世界多么有贡献的人，我们都不会因此而放弃对奉献精神的歌颂——为他人牺牲自己的生命是人性善的极致体现，这种行为或许对社会来说是一种直接损失（牺牲晓霞挽救一个孩子，我们不清楚孩子将在未来为社会带来何种贡献，但我们清楚晓霞是非常优秀的记者），但如果没有这种精神对于人心的震撼，社会将难以成为一个和谐的集体，不过是一群自私自利的人的集合。从这个角度上说，晓霞的牺牲才是她对社会最大的贡献。</p>
+<p>至于同辈的其他人，金波前面已经说过了，真是不幸至极……金波同样是一个优秀的人，他没有成为本书的主要人物，但也只是角度没有到他那里而已。顾养民，感情生活不太幸运……郝红梅最终和润生走到一起，也是经历了很多困难，看到红梅在润生离开的那一年里的遭遇，真是恐怖极了——刁民！不受教育的农民的骨子里藏着怎样的对弱者的恶意，真是无可想象的！所幸，他们都熬过来了。说到这里，书中出现了两幕身处绝境想要自杀的场景，人啊人，活着竟然是如此困难！红梅没有做错什么，不过是成分的问题，却经历了很多绝望的事情——先是和顾养民分手，后是丈夫逝世，再是同村令人作呕的男人们的骚扰！而兰花，痴情的女子，倒也是传统观念的作怪吧！不愿意离开她那逛鬼丈夫，幸好最好他浪子回头。</p>
+<p>转来谈谈少安、润叶、向前等这一代人吧。曾经在第一部的时候，我为少安放弃润叶感到非常难过——这就是少安和少平的区别，少平不会放弃直至真正的困难到来，少安却选择了主动放弃。少安是那一代人的鲜明写照，正如我的父母。但少安还是要比同龄人优秀太多，主要是改革开放之后勇敢地走上做生意的道路，这种能力是那时候的人少有的。少安这个角色距离我这一代，已经远不少了，我觉得他主要的作用是借以描述那十几年里风云变幻的历史。他是这一切的亲历者，他应该和田福堂等一众人联系起来，包括田福军——我们看到那一代人，在高层有不少觉醒的声音，他们忧国忧民，同样有沉迷于“革命”、不动脑子的人；而在基层，更多的是那种热心“革命”的人了……从对田福堂的仔细描写，其实可以看出为什么他们热心于“革命”——他们不用劳动，就可以掌握权力、衣食无忧、高人一等。这样的日子谁愿意丢掉呢？所以当最初开始改革的时候，他们每天关注报纸，希望得到“集中”的指示。他们作为一部分反对势力，以及那些没有真正劳动过的人（比如黑老）是当时真正的阻力，但我们很容易就可以发现他们真正想阻碍开放的原因——并不是所谓的拥护社会主义，他们只是把自己享受的日子的制度称为“社会主义”罢了。邓小平同志有真正的魄力，党内所有人从原本的“高枕无忧”变得紧张工作起来，更重要的是他在重新定义“社会主义”。这样的勇气始终让我觉得敬佩不已。像田福军这样的人，是民族的希望，当然在小说里他同样有犯错的时候。在小说中，也描述了一些曾经执迷不悟但后来醒悟的人。这类官场人物太多，有时候我就很快掠过去了……</p>
+<p>润叶和向前的故事是我最不能理解的……润叶可以说是那个年代的另一种代表，她出身良好，读书，当公务员；人也善良，工作尽心。但不少方面却是缺失的，比如和向前结婚，这种盲目的牺牲真是让人害怕极了。向前的悲剧很大程度上是由于润叶，可怜的向前！虽然他不受待见，似乎也没有什么特别的特点，和润生差不多，唯一的爱是汽车和润叶。唉，其实世界上一直都有这类的生活！典型的Type-B性格，没有太多上进心，但事情做得不错，这种人在文学作品中不多见，毕竟他们没有太多可以写的地方，不过是朝九晚五，循规蹈矩，这样的人要是成为主角怕不是写不到一万字的小说！但我们并不能说这类人不可爱，他们某些方面的感情是很深刻的。向前是这本书里我最同情的人，尤其是对于他热爱润叶却不得润叶的种种痛苦表现，让人心疼不已。他失去双腿之后甚至因为润叶的一点异常以为润叶和武惠良好了，准备自杀让润叶拥有幸福的生活！——噢润叶，若是你了解这十分之一，大概也会更早地理解向前吧！可怜的向前最终酿成大祸，失去双腿之后，润叶竟然接受了向前，既当妻子又当母亲，甚至最后为他生了个孩子！我不得不觉得润叶对于向前的感情大部分是源于同情和愧疚，类似现在说的“可以共患难，不可以共富贵”。她是一个善良的人，不可能不管。总之，这是悲剧里产生的幸福，让人觉得不太痛快。当然，正如书中说的，当 向前 面对回心转意的润叶，向前的心理活动是别说一双腿，甚至是生命也愿意为她牺牲。</p>
+<p>再说前卫的代表杜丽丽和她可怜的老公武惠良。杜丽丽迅速地爱上了古风铃，并且还和他发生关系……这些所谓浪漫诗人，对于感情的态度实在是吓人。书中没有详细描写古风铃对杜丽丽的真实态度，只说了古风铃对那一趟出走由于遇到杜丽丽十分满意。我对此的解读是，古风铃不过是卖弄杜丽丽的感情，而杜丽丽出于崇拜，爱上了古风铃。杜丽丽既爱古风铃，又爱武惠良，在武惠良之外还有一个古风铃的原因是古风铃才能和她在诗歌方面有互相理解（但我觉得古风铃就是一个笑话，假装有水平不过是为了混吃。），她让我想起林徽因。撇开古风铃的本质到底是好是坏，我觉得杜丽丽和林徽因，大概是感情太过丰富……我不知道为什么不能在结婚之后，当遇到一个知音，只产生友情而不产生爱情。但爱情和友情如何划分呢？抑或是有的人的生活里只想要一个异性，ta是最好的朋友也是爱人。</p>
+<p>写到这里，再想不起其他什么人物了，剩下的好像就是一些市井小民，读时只让我感到无趣。我还是最喜欢晓霞和少平的精神，希望也能像他们一样勇敢地生活。但我知道了，人终究都是平凡的，有一时突然辉煌的人物，但没有一辈子的光环笼罩在某个人身上。唯一能做的大概是，认真地活。耀眼的终将过去，对它的渴望也该收一收。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/30/diary/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Beenle Yi">
+      <meta itemprop="description" content="关于平凡的人生与技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="路漫漫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/30/diary/" class="post-title-link" itemprop="url">diary</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-01-30 20:08:13" itemprop="dateCreated datePublished" datetime="2020-01-30T20:08:13+08:00">2020-01-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-01 20:51:21" itemprop="dateModified" datetime="2020-02-01T20:51:21+08:00">2020-02-01</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>2020/1/30</p>
+<h4 id="学习进度"><a href="#学习进度" class="headerlink" title="学习进度"></a>学习进度</h4><ol>
+<li>形式语言与自动机：复习PPT4，没有开始新知识</li>
+<li>硬件软件接口：chapter4.5，4.6未完</li>
+<li><p>英语单词：10</p>
+<p> 严重嗜睡，一觉睡到了九点，而且很困，可能是因为来大姨妈的缘故。</p>
+<p> 依旧是吃饭，学习一小时，打球，吃饭，学习一小时，睡觉，学习，学到无聊后玩一会，吃饭，学习……形式语言与自动机学习得非常快乐，虽然进度不是很快，有一些问题没有解决。然而硬件软件接口是非常痛苦，前三章的内容，既在CSAPP中学习了，又在网课中学习了，很难找到不会的内容，按顺序看又慢；有一些内容跳过，结果又看不懂了；而一些内容看了又没法记住……就是感觉看了很久，看得眼前模糊，结果还是啥都不会！</p>
+<p> 终于终于，今天看到处理器的中间部分，感觉内容比网课上的东西深了，希望明天能学得比较快乐。</p>
+<p> 今天羊哥跟我说了好久在江西的情况，眼睛流眼泪，鼻子流鼻涕，口腔溃疡，手脚疲惫，反胃！消极的羊羊真是让人担心极了，哭</p>
+<p> 2020/1/31</p>
+<p> 放寒假之前想，只有抓住寒假的时间努力，才能超越之前总是在一个学期中只学到课程要求的内容的局限。结果寒假到了这个时候发现，寒假的努力并不能像学期中想象的那样，和学期中一样花费多时间学习。也明白了传说中很神奇的某某人两周修一门斯坦福课程的难点为什么是每天坚持八小时——那时候想，这好像也没有什么，在学校，一天远不止八个小时！可是现在，每天底线四小时基本达到，效率也不敢说。每周六天，每天八个小时，呵，真是一个美好的目标！</p>
+<p> 倒是希望能从上个月中吸取经验，慢慢领会如何过好一个假期。前一个月，首先有十天左右的时间都有安排，当然是一些聚会、和羊在一起、赶路之类的事情，也不能说是颓废的浪费；然后剩下的十多天，有学习，但开始进入学习非常困难，也就是前十多天玩惯了，静下心来投入很困难，后面再调整，才慢慢地每天坚持4小时+。这是显然的，这就是环境的影响，如果无关环境，那么一个人就可以在家里上课、上班，也就不存在学校和办公楼了吧。所以可能最能改变一个假期的状态的，是找一个学习的环境，或是呆在学校里，或是每天跑图书馆；以后开创生活，环境也更为注意。而如果无法改变现在的环境，那么，也尽量让自己的环境安静，像在学校里一样，有舒服的课桌，把东西收拾得更为整齐，就像在学校里一样。其次，就是心态上调整，心里清楚假期的定位和目标。再者，就是下限了。</p>
+<p> 剩下一个月，希望进入学期中的状态，每周6<em>8+1</em>4！</p>
+</li>
+</ol>
+<pre><code>2020/02/01
+
+然而今天就几乎所有的时间花在小说上了。《平凡的世界》，这本让我欲罢不能的小说！不过今天是周六，就当周六是只有四小时的那天吧！之前读书都不太写读后感或书评，或许应该找时间写一些，如果明天可以的话就不拖。
+最怕的是，快乐之后很难进入学习状态，尽量让自己身体回到书桌前，然后先做自己能做的事情，例如写日记或是学习简单的科目。
+
+形式语言，拖了太久，时间紧的时候，都搁置了，之后每天完成一个ppt的内容，暂时不看ppt， **看书做笔记和完成ppt上的作业** 。
+
+今晚还是忍不住满脑子都是《平凡的世界》，干脆，就直接写一写吧。太多想法了。
+</code></pre>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/30/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA%E4%B9%8B%E4%BA%8C%20%E6%9C%89%E9%99%90%E8%87%AA%E5%8A%A8%E6%9C%BA%E5%92%8C%E5%8F%B3%E7%BA%BF%E6%80%A7%E6%96%87%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Beenle Yi">
+      <meta itemprop="description" content="关于平凡的人生与技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="路漫漫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/30/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA%E4%B9%8B%E4%BA%8C%20%E6%9C%89%E9%99%90%E8%87%AA%E5%8A%A8%E6%9C%BA%E5%92%8C%E5%8F%B3%E7%BA%BF%E6%80%A7%E6%96%87%E6%B3%95/" class="post-title-link" itemprop="url">形式语言与自动机之二 有限自动机和右线性文法</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-01-30 20:06:31" itemprop="dateCreated datePublished" datetime="2020-01-30T20:06:31+08:00">2020-01-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-02 16:28:49" itemprop="dateModified" datetime="2020-02-02T16:28:49+08:00">2020-02-02</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="（二）有限自动机和右线性文法"><a href="#（二）有限自动机和右线性文法" class="headerlink" title="（二）有限自动机和右线性文法"></a>（二）有限自动机和右线性文法</h1><p>讨论语言，从生成语言的角度可以使用前面定义的文法进行定义，从识别语言的角度可以使用自动机进行定义，而正则式是特殊的对应3型文法的可以直接体现语言的模式。本章讨论3型文法对应的语言，文法角度的右线性文法、左线性文法也即3型文法，识别角度的有限自动机，正则式都是等价的定义。这篇文章的逻辑将是介绍三种定义，证明其等价性，介绍其性质。</p>
+<h2 id="有限自动机"><a href="#有限自动机" class="headerlink" title="有限自动机"></a>有限自动机</h2><p>$Def.$有限自动机<br>有限即有限状态，但这里（参考教材）没有定义“有限”，猜测是可列有限的定义。</p>
+<p>$Def.$确定的有限自动机(DFA)<br>后继状态唯一</p>
+<p>$Def.$不确定的有限自动机(NFA)<br>后继状态不唯一</p>
+<h4 id="有限自动机的表示"><a href="#有限自动机的表示" class="headerlink" title="有限自动机的表示"></a>有限自动机的表示</h4><h6 id="状态转移表"><a href="#状态转移表" class="headerlink" title="状态转移表"></a>状态转移表</h6><h6 id="状态转换图"><a href="#状态转换图" class="headerlink" title="状态转换图"></a>状态转换图</h6><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9ia2ltZy5jZG4uYmNlYm9zLmNvbS9waWMvNmE2M2Y2MjQ2YjYwMGMzM2I3MzBlNTk4MTE0YzUxMGZkOWY5YTExMA?x-oss-process=image/format,png" alt="在这里插入图片描述"></p>
+<h6 id="形式定义"><a href="#形式定义" class="headerlink" title="形式定义"></a>形式定义</h6><p>确定的有限自动机是一个五元组$M=(Q,T,\delta,q_0,F)$，其中$Q$是有限状态集合，$T$是有限的输入字母表，$\delta$是转换函数，$Q ×T \rightarrow Q$的映射，$q_0$是初始状态，只有一个状态，$F$是终止状态集，可以多个状态。</p>
+<p>$\delta$函数这样表达：在状态$q$，读入$a$后，状态转换成$p$，则$\delta(q,a)=p$。</p>
+<p>$\delta ‘$函数是映射$Q ×T ^*\rightarrow Q$，即输入可以是字符串。其递归定义为：</p>
+<ul>
+<li>对$\varepsilon \in T^*，\delta’(q,\varepsilon)=q;$</li>
+<li>对任意$a \in T, \omega \in T^*，\delta’(q,\omega a)=\delta(\delta’(q,\omega),a)$</li>
+</ul>
+<p>$Def.$若$\delta’(q,\omega)=p, p \in F$ 称$\omega$被该有限自动机接受；$L(M)=\{\omega | \delta’(q_0,\omega) \in F\}$为M所接受的语言。</p>
+<p>$Def.$格局<br>$(q,\omega)$，其中$q$当前状态，$\omega$为当前时刻等待输入的字符。称$(q_0,\omega)$为初始格局，$(q,\varepsilon)$为终止格局（或接受格局）。</p>
+<p>当$\delta(q,a)$含有$q_1$，用格局形式可以写成<script type="math/tex">(q,a\omega) \vdash(q_1,\omega)</script>其中$\omega \in T^<em>$，$\vdash$表示从一个格局变换为另一个格局。若 $\omega$ 可以被状态机 $M$ 接受，可以写作 $\vdash$ 横线上加</em>，左边为 $(q_0,\omega)$ ，右边为$(q,\varepsilon)$。</p>
+<h2 id="不确定有限自动机"><a href="#不确定有限自动机" class="headerlink" title="不确定有限自动机"></a>不确定有限自动机</h2><p>其定义在确定有限自动机上做部分更改。</p>
+<ol>
+<li>$\delta$ 函数是$Q × T \rightarrow 2^Q$</li>
+<li>接受的定义改为，接受一个字符串后进入的状态集，至少有一个状态属于$F$。</li>
+<li>注意状态转移表中每一项的后继状态都是一个集合，无论状态数有多少</li>
+<li>$\delta’$定义也不同，可以自己推想知</li>
+</ol>
+<h1 id="能力要求"><a href="#能力要求" class="headerlink" title="能力要求"></a>能力要求</h1><ol>
+<li>给出识别要求设计有限自动机</li>
+<li>将不确定有限自动机转换为确定有限自动机</li>
+</ol>
+<p>ppt4作业完成；课后作业14.（2）未做；<br>ppt5练习不理解 “带$\varepsilon$的转换”</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/30/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA%E4%B9%8B%E4%B8%80%20%E8%AF%AD%E8%A8%80%E4%B8%8E%E6%96%87%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Beenle Yi">
+      <meta itemprop="description" content="关于平凡的人生与技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="路漫漫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/30/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA%E4%B9%8B%E4%B8%80%20%E8%AF%AD%E8%A8%80%E4%B8%8E%E6%96%87%E6%B3%95/" class="post-title-link" itemprop="url">automata and language</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-01-30 10:34:42" itemprop="dateCreated datePublished" datetime="2020-01-30T10:34:42+08:00">2020-01-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-02 20:21:22" itemprop="dateModified" datetime="2020-02-02T20:21:22+08:00">2020-02-02</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="语言与文法"><a href="#语言与文法" class="headerlink" title="语言与文法"></a>语言与文法</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><ol>
+<li>字母表$T$</li>
+<li>字符串$t,u,v,x,y,z$及其长度</li>
+<li>字符串的转置$\widetilde{\omega}$</li>
+<li>包括$\varepsilon$在内的字母表$T$上的所有字符串集合$T^*$</li>
+<li>不包括$\varepsilon$在内的字母表$T$上的所有字符串集合$T^{+}$</li>
+<li>字母表$T$上的语言$L$是$T^*$的子集</li>
+<li>两个语言的积：$L_1$和$L_2$的积$L_1 \cdot L_2$，是由$L_1$和$L_2$的字符串连接所构成的字符串的集合；<br><strong>语言的积不满足交换律</strong></li>
+<li>语言的幂：<script type="math/tex; mode=display">L^0={\varepsilon} \\
+L^n=L \cdot L^n-1</script></li>
+<li>语言的闭包与正闭包<script type="math/tex">L^*=\displaystyle\bigcup_{n\geqslant0} L^n\\ L^+=\displaystyle\bigcup_{n\geqslant1}L^n</script></li>
+<li>文法 定义语言的数学模型</li>
+<li>使用Chomsky文法体系定义语言：文法G是一个四元组，$G=(N,T,P,S)$<br>（1）$N$ 非终结符的有限集合<br>（2）$T$ 终结符的有限集合，且$N \bigcup T=\varnothing$<br>（3）$P$ 形式为$\alpha \rightarrow \beta$的生成式有限集合，且$\alpha ∈(N \bigcup T)^+,\beta ∈( N \bigcup T)^*$，$\alpha$至少含一个非终结符号，意味着$\alpha$不能为空串而且不能全由终结符组成<br>（4）$S$ 起始符，$S \in N$  </li>
+<li>推导：直接推导（长度为1）$\alpha \Rightarrow \alpha_0$，长度为0的推导$\alpha=\alpha_0$，长度大于0的推导$\alpha \xrightarrow[G]{*}\alpha_0$</li>
+<li>句型：字符串$\alpha$是文法$G$的句型当且仅当$S     \xrightarrow [G] {<em>} \alpha$且$\alpha \in (N \bigcup T)^{</em>}$</li>
+<li>由文法产生的语言$L(G)=\lbrace\omega | \omega \in T^{<em>},S\xrightarrow [G] {</em>} \omega \rbrace$，即 $L(G)$ 中的一个字符必须由 $S$ 推导出，由终结符组成<ol>
+<li>文法分类<br>（1）0型：无限制 （但也有基础限制）对应无限制性语言<br>（2）1型：上下文有关文法。生成式的形式为$\alpha \rightarrow \beta$，其中$|\alpha| \leqslant |\beta|$，且$\alpha,\beta \in (N \bigcup T)^{+}$ 对应上下文有关语言<br><strong>典型特征：左边比右边短</strong><br>（3）2型：上下文无关文法。生成式的形式为$A \rightarrow \alpha,A \in N, \alpha \in (N \bigcup T)^<em>$ 对应上下文无关语言<br><strong>典型特征：左边都是非终结符</strong> 注意2型的右边可以是$\varepsilon$，而1型不可<br>（4）3型：正则文法。生成式的形式为$A \rightarrow \omega B$或$A \rightarrow \omega,A,B \in N, \omega \in T^</em>$称右线性文法，如果生成式的形式为$A \rightarrow B\omega$或$A \rightarrow \omega$称左线性文法 对应正则语言<br><strong>总结：当2型不包含 $A \rightarrow \varepsilon$时， 3型 $\in$ 2型$\in$ 1型$\in$ 0型</strong> </li>
+<li>巴科斯范式（BNF, Backus Normal Form）：讨论某种程序设计语言语法的一种元语言。使用$::=$代替生成式中的$\rightarrow$，所有的非终结符号都用$&lt;&gt;$括起来，左端相同的生成式的右端使用$|$隔开后合并成一个生成式。</li>
+<li>语法图：方框表示非终结符号，圆框表示终结符号</li>
+</ol>
+</li>
+</ol>
+<h2 id="能力要求"><a href="#能力要求" class="headerlink" title="能力要求"></a>能力要求</h2><ol>
+<li>字符串的运算和闭包计算</li>
+<li>由文法推导语言</li>
+<li>证明从文法推导出的语言正确，证明集合等价需要证明左边包含右边，右边包含左边</li>
+<li>判断文法分类</li>
+<li>构造文法</li>
+</ol>
+<p>作业完成；<br>能力要求没有总结；</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/29/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E8%AE%BE%E8%AE%A1-%E7%A1%AC%E4%BB%B6%E8%BD%AF%E4%BB%B6%E6%8E%A5%E5%8F%A3%E4%B9%8B%E4%B8%80%20%E5%A4%84%E7%90%86%E5%99%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Beenle Yi">
+      <meta itemprop="description" content="关于平凡的人生与技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="路漫漫">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/29/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E8%AE%BE%E8%AE%A1-%E7%A1%AC%E4%BB%B6%E8%BD%AF%E4%BB%B6%E6%8E%A5%E5%8F%A3%E4%B9%8B%E4%B8%80%20%E5%A4%84%E7%90%86%E5%99%A8/" class="post-title-link" itemprop="url">计算机组成与设计-硬件软件接口之一 处理器</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-01-29 17:43:46" itemprop="dateCreated datePublished" datetime="2020-01-29T17:43:46+08:00">2020-01-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-01-31 16:12:08" itemprop="dateModified" datetime="2020-01-31T16:12:08+08:00">2020-01-31</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="设计方法"><a href="#设计方法" class="headerlink" title="设计方法"></a>设计方法</h1><ol>
+<li>确定要设计的指令集</li>
+<li>逐个指令分析，按指令执行流程分析，增加元件、控制命令，完善数据通路</li>
+<li>完成数据通路图的绘制</li>
+<li>确定控制命令成立的条件，建立真值表</li>
+<li></li>
+</ol>
+<h1 id="处理器工作原理"><a href="#处理器工作原理" class="headerlink" title="处理器工作原理"></a>处理器工作原理</h1><h3 id="流水线的思想"><a href="#流水线的思想" class="headerlink" title="流水线的思想"></a>流水线的思想</h3><p>流水线本身是一个伟大的发明，或许处理器这里只是借鉴了工业上的思想。</p>
+<h3 id="冒险"><a href="#冒险" class="headerlink" title="冒险"></a>冒险</h3><p>多种冒险，多种解决方案。</p>
+<ol>
+<li>structural hazard：硬件支持不够，例如若只有一个存储器，而又只支持读或写一个，那么两条指令一个要求读一条要求写，时间又相同时则出现了冒险；</li>
+<li>data hazard：无法及时提供指令所需的数据；解决：<ol>
+<li>Forwarding，在需要的数据存到内存或寄存器之前，从内部存储器提前提出数据给指令；<br>但以上方法不万能，当若遇到load-use data hazard，那就只能阻塞一个stage，称<strong>流水线阻塞</strong>或气泡；</li>
+</ol>
+</li>
+<li>control hazard：指令地址可能要变化，当遇到分支的情况即会产生；<br>解决：<ol>
+<li>等待</li>
+<li>预测，按上一次分支的结果进行预测正确率达90%</li>
+<li>delayed branch，将一条无关指令放到条件分支指令后执行，则避免了做无关事项</li>
+</ol>
+</li>
+</ol>
+<h1 id="心路历程"><a href="#心路历程" class="headerlink" title="心路历程"></a>心路历程</h1><h3 id="2020-01-29"><a href="#2020-01-29" class="headerlink" title="2020-01-29"></a>2020-01-29</h3><p>第二、三章的内容和上学期学习的计算机系统基础课程内容有重复，但一些新的内容又没有理解得很到位，学得十分糟心。一直很难学习这种一知半解的内容，在时间又赶的情况下。</p>
+<p>从第四章开始，期望一边学习一边上vivado写代码。</p>
 
       
     </div>
@@ -573,14 +722,14 @@
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">Beenle Yi</p>
-  <div class="site-description" itemprop="description"></div>
+  <div class="site-description" itemprop="description">关于平凡的人生与技术</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
