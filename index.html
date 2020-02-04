@@ -193,10 +193,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-02-02 20:13:36 / Modified: 20:22:25" itemprop="dateCreated datePublished" datetime="2020-02-02T20:13:36+08:00">2020-02-02</time>
+              <time title="Created: 2020-02-02 20:13:36" itemprop="dateCreated datePublished" datetime="2020-02-02T20:13:36+08:00">2020-02-02</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-03 12:16:39" itemprop="dateModified" datetime="2020-02-03T12:16:39+08:00">2020-02-03</time>
+              </span>
 
           
 
@@ -209,8 +215,45 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="正则表达式与自动机的关系"><a class="markdownIt-Anchor" href="#正则表达式与自动机的关系"></a> 正则表达式与自动机的关系</h2>
-<p>前面已经证明了<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi><mi>F</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">NFA</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mord mathit">A</span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>D</mi><mi>F</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">DFA</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.02778em;">D</span><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mord mathit">A</span></span></span></span> 的等价关系</p>
+          <h1 id="带-varepsilon-转换的有限自动机"><a href="#带-varepsilon-转换的有限自动机" class="headerlink" title="带 $\varepsilon$ 转换的有限自动机"></a>带 $\varepsilon$ 转换的有限自动机</h1><p>前面介绍的 $NFA$ 都是在输入 $\varepsilon$ 时不能做转换的，而且 $NFA$ 也不能接受空串，除非初始状态等于终止状态。</p>
+<p>带 $\varepsilon$ 转换意味着 $\delta$ 函数改为映射 $Q×(T\bigcup \{*\})\rightarrow 2^Q$。</p>
+<p>$Def.$ $\varepsilon-closure$  状态 $q$ 的 $\varepsilon-closure$ </p>
+<p>从 $q$ 经过所有的 $\varepsilon$ 路径可以达到的状态，包括状态 $q$ 自身</p>
+<p>$Def.$ 状态子集 $I$ 的 $\varepsilon-closure$ </p>
+<p> $\varepsilon-closure(I)=\displaystyle\bigcup_{q \in I}\varepsilon-closure(q)$ </p>
+<p>$Def.I_a=\varepsilon-closure(P),P=\delta(I,a) $  </p>
+<p>求解时先求 $P$ 再求 $I_a$ 即可</p>
+<p> $\delta’$函数改为 $Q×T^*\rightarrow 2^Q$，递归定义：</p>
+<ol>
+<li>$\delta’(q,\varepsilon)=\varepsilon-closure(q)$ </li>
+<li>$\forall\omega\in T^*,\delta’(q,\omega a)=\varepsilon-closure(P),P=\{p\mid\exist r \in \delta’(q,\omega),p \in\delta(r,a)\}$ </li>
+</ol>
+<p><strong>这里隐藏的信息是，$\delta’$ 函数的转换是每处都考虑$\varepsilon$ 的，原因是上述第2点中，$\omega\in T^*$，而且$\delta’$ 是P的$ \varepsilon-closure$，也就意味着$\delta(q,a)\not=\delta’(q,a)$，$\delta(q,\varepsilon)\not=\delta’(q,\varepsilon)$，原因是$\delta$ 不包含状态自身</strong> </p>
+<p>$The.\varepsilon-NFA \Leftrightarrow NFA$ </p>
+<p>构造证明：$M=(Q,T,\delta,q_0,F)$ 是一个 $\varepsilon-NFA$ ，构造无$\varepsilon$ 的$NFA$ $M_1=(Q,T,\delta_1,q_0,F_1)$ </p>
+<ol>
+<li>$\forall a\in T,\delta_1(q,a)=\delta’(q,a)$ </li>
+<li><script type="math/tex; mode=display">F_1=\left\{\begin{aligned}F\bigcup\{q_0\} &  & {若\varepsilon-closure(q_0) \bigcap F \not= \empty} \\F &  & {否则}\end{aligned}\right.</script></li>
+</ol>
+<p>证明两者等价依旧是使用对字符串 $\omega$ 的 长度进行归纳的方法证明$\delta’(q_0,\omega)=\delta_1’(q_0,\omega)$ ，但此处也有特殊的情况</p>
+<ol>
+<li>$\mid \omega\mid=0$ ，$\delta’(q_0,\varepsilon)=\varepsilon-closure(q_0);\delta_1’(q_0,\varepsilon)={q_0}$ 故不一定成立</li>
+<li>从 $\mid \omega\mid=1$ 开始归纳，由定义，$\forall a\in T,\delta_1(q,a)=\delta’(q,a)$ ，$\delta_1’(q,a)=\delta_1(q,a)$ ，故成立</li>
+<li>假设当 $\mid \omega\mid=n$ 时成立，则$\delta’_1(q_0,\omega a)=\delta_1(\delta’_1(q_0,\omega),a)=\delta_1(\delta’(q_0,\omega),a)$，设$\delta’(q_0,\omega)=R$ ，<strong>此处不能直接得到结论，原因是条件里不存在对于集合的情况的定义，故还是拆开，单个的时候证明</strong>$\delta_1(R,a)=\displaystyle\bigcup_{q\in R}\delta_1(q,a)=\displaystyle\bigcup_{q\in R} \delta’(q,a)=\delta’(q_0,\omega a)$ ，<strong>同时，依旧小心$\delta’$函数对于$\varepsilon-NFA$的不同</strong>  </li>
+</ol>
+<p>再证$\delta_1’(q_0,\omega)$ 含$F_1$的一个状态，当且仅当$\delta’(q_0,\omega)$ 含$F$的一个状态。如果$\delta’(q_0,\omega)=\delta_1’(q_0,\omega)$ 完全相等，而且$F_1=F$则这一步就不需要了，但此处特殊。先证明充分条件：</p>
+<ol>
+<li>当$\mid w \mid=0$时，若 $\delta’(q_0,\varepsilon)$ 包含$F$的一个状态，意味着$M$接受，而在$M_1$ 中，此处$q_0 \in F_1$，故成立；</li>
+<li>当$\mid \omega \mid&gt;0$ ，$\delta’(q_0,\omega)=\delta_1’(q_0,\omega)$，所以若$\delta’(q_0,\omega)$含有$F$的一个状态，则$\delta_1’(q_0,\omega)$含有相同的一个状态属于$F_1$，反之亦然。</li>
+</ol>
+<p>再证明必要条件：</p>
+<ol>
+<li>若$\delta’_1(q_0,\omega)$含$F_1$的一个状态，且不是$q_0$，则由$F_1$定义，$\delta’(q_0,\omega)$ 必含有$F$的一个状态；</li>
+<li>若$\delta_1’(q_0,\omega)$含有$q_0 \in F_1$ ，且$\delta’(q_0,\omega)=\varepsilon-closure(\delta_1’(q_0,\omega))$ ，则$q_0 \in \delta’(q_0,\omega)$ </li>
+</ol>
+<p>证毕。</p>
+<p>至此，可知</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">   $\varepsilon-NFA$ --&gt; NFA</span><br><span class="line">   NFA --&gt; $\varepsilon-NFA$</span><br><span class="line">   DFA--&gt;NFA</span><br><span class="line">   NFA --&gt; DFA</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -261,7 +304,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-02 17:32:52" itemprop="dateModified" datetime="2020-02-02T17:32:52+08:00">2020-02-02</time>
+                <time title="Modified: 2020-02-02 20:34:30" itemprop="dateModified" datetime="2020-02-02T20:34:30+08:00">2020-02-02</time>
               </span>
 
           
@@ -646,6 +689,10 @@ L^n=L \cdot L^n-1</script></li>
           <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">posts</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span>
       </div>
   </nav>
 </div>
