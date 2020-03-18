@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -21,12 +21,12 @@
   var CONFIG = {
     hostname: new URL('http://yoursite.com').hostname,
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Pisces',
     version: '7.7.0',
     exturl: false,
     sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
     copycode: {"enable":false,"show_result":false,"style":null},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    back2top: {"enable":true,"sidebar":true,"scrollpercent":false},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
     fancybox: false,
     mediumzoom: false,
@@ -52,7 +52,7 @@
 <meta property="og:title" content="Beenle&#39;s Space">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="Beenle&#39;s Space">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="Beenle Yi">
 <meta name="twitter:card" content="summary">
 
@@ -120,7 +120,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
+    <div class="toggle" aria-label="切换导航栏">
       <span class="toggle-line toggle-line-first"></span>
       <span class="toggle-line toggle-line-middle"></span>
       <span class="toggle-line toggle-line-last"></span>
@@ -134,12 +134,37 @@
   <ul id="menu" class="menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-fw fa-sitemap"></i>站点地图</a>
+
+  </li>
+        <li class="menu-item menu-item-commonweal">
+
+    <a href="/404/" rel="section"><i class="fa fa-fw fa-heartbeat"></i>公益 404</a>
 
   </li>
   </ul>
@@ -149,10 +174,6 @@
     </header>
 
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
 
 
     <main class="main">
@@ -167,7 +188,880 @@
         
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E8%AE%BE%E8%AE%A1-%E7%A1%AC%E4%BB%B6%E8%BD%AF%E4%BB%B6%E6%8E%A5%E5%8F%A3%E4%B9%8B%E4%BA%8C%20cache/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Beenle Yi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Beenle's Space">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/03/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E8%AE%BE%E8%AE%A1-%E7%A1%AC%E4%BB%B6%E8%BD%AF%E4%BB%B6%E6%8E%A5%E5%8F%A3%E4%B9%8B%E4%BA%8C%20cache/" class="post-title-link" itemprop="url">计算机组成与设计-硬件软件接口之二 cache</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-02 12:57:53" itemprop="dateCreated datePublished" datetime="2020-03-02T12:57:53+08:00">2020-03-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-18 13:21:51" itemprop="dateModified" datetime="2020-03-18T13:21:51+08:00">2020-03-18</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="basics"><a href="#basics" class="headerlink" title="basics"></a>basics</h1><p>two questions to solve:</p>
+<ol>
+<li>how to know if a data item exists in the cache?<br><code>directed mapped</code></li>
+<li>how to know whether the data in the cache is what we want?<br>a tag contains the upper portion of the address<br>add a <code>valid bit</code> to each block in the cache</li>
+</ol>
+<h1 id="accessing"><a href="#accessing" class="headerlink" title="accessing"></a>accessing</h1><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Index</th>
+<th>Valid?</th>
+<th>Tag</th>
+<th>Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>a bit Y/N</td>
+<td></td>
+<td>called block size.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="about-the-block-size"><a href="#about-the-block-size" class="headerlink" title="about the block size"></a>about the block size</h3><p>block size增大，miss rate会降低，但当增大很多时，由于blocks的数目会随之减少（cache的总大小不变），那么blocks的竞争会变大，而且前面设计的初衷spatial locality体现不大（blocks太大了，很多情况下无关区域的数据也进入了）；</p>
+<p>再者，miss penalty也增大，因为若是miss，则要移到cache里的数据变多了。</p>
+<p>一些解决方法：</p>
+<ol>
+<li>early returned 一旦需要的数据移到cache里后，立即返回执行，而不是等到整个block的数据都移入完毕。这种方法在instruction access中表现良好，但在普通的data获取时表现一般，因为data的位置太过随机，很可能出现还没有transfer完毕，处理器又需要别的数据，如果这两者无法同时进行，那么就需要stall了</li>
+<li>requested word first or critical word first 先transfer需要的字，再从该字的地址往后transfer，然后回到该block的第一个地址继续下去transfer，跟early returned有相同的问题</li>
+</ol>
+<h2 id="write"><a href="#write" class="headerlink" title="write"></a>write</h2><h3 id="write-through-scheme"><a href="#write-through-scheme" class="headerlink" title="write-through scheme"></a>write-through scheme</h3><p>use a write buffer, write into cache and write buffer. The write buffer write into the memory when execution.</p>
+<h3 id="write-back"><a href="#write-back" class="headerlink" title="write-back"></a>write-back</h3><p>only write into cache and when it is replaced it write into the lower level of the hierarchy.</p>
+<p>elaboration？</p>
+<h2 id="example"><a href="#example" class="headerlink" title="example"></a>example</h2><p>two methods: combined the instructions and data cache ; split cache(two cache operate in parallel). The former one have a higher hit rate while the latter one have a wider cache bandwidth. THe miss rate is not the solo measure of cache performance.</p>
+<h2 id="designing-the-memory-system-to-support-caches"><a href="#designing-the-memory-system-to-support-caches" class="headerlink" title="designing the memory system to support caches"></a>designing the memory system to support caches</h2><ol>
+<li>one-word-wide memory organization</li>
+<li>wider memory organization</li>
+<li>interleaved memory organization</li>
+</ol>
+<h1 id="measuring-and-improving-cache-performance"><a href="#measuring-and-improving-cache-performance" class="headerlink" title="measuring and improving cache performance"></a>measuring and improving cache performance</h1><p>two technique: </p>
+<ol>
+<li>reducing the miss rate</li>
+<li>reducing the miss penalty</li>
+</ol>
+<p>in most write-through cache organization, the read and write miss penalties are the same. So</p>
+<script type="math/tex; mode=display">
+Memory-stall clock cycles=\frac{Instructions}{programs}*\frac{Misses}{Instructions}*Miss penalty
+\\
+Memory-stall clock cycles=\frac{Memory accesses}{programs}*{Miss rate}*Miss penalty</script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/17/Linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%E8%AE%B0%E5%BD%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Beenle Yi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Beenle's Space">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/17/Linux%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%E8%AE%B0%E5%BD%95/" class="post-title-link" itemprop="url">Linux系统常用指令记录</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-17 17:57:55" itemprop="dateCreated datePublished" datetime="2020-02-17T17:57:55+08:00">2020-02-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-02-18 11:25:51" itemprop="dateModified" datetime="2020-02-18T11:25:51+08:00">2020-02-18</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li>git clone [网址可能需要http(s)://]</li>
+<li>wget [网址同上]</li>
+<li>tar -jxvf 解压</li>
+<li>uname -r 主机内核版本</li>
+<li>mv 移动文件位置或是改文件名</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mv &#x2F;usr&#x2F;udt&#x2F;* . &#x2F;&#x2F;将&#x2F;usr&#x2F;udt下面所有文件移到当前文件夹</span><br><span class="line">mv test.txt wbk.txt &#x2F;&#x2F;将test.txt改名成wbk.txt</span><br><span class="line">mv usr&#x2F;udt&#x2F;* usr&#x2F;bin&#x2F; 将当前目录下的usr&#x2F;udt&#x2F;的所有文件移到usr&#x2F;bin&#x2F;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/17/%E5%9C%A8Ubuntu%E4%B8%8A%E7%BC%96%E8%AF%91MIPS32%E6%B1%87%E7%BC%96%E6%8C%87%E4%BB%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Beenle Yi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Beenle's Space">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/17/%E5%9C%A8Ubuntu%E4%B8%8A%E7%BC%96%E8%AF%91MIPS32%E6%B1%87%E7%BC%96%E6%8C%87%E4%BB%A4/" class="post-title-link" itemprop="url">在Ubuntu上编译MIPS32汇编指令</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-17 15:05:50" itemprop="dateCreated datePublished" datetime="2020-02-17T15:05:50+08:00">2020-02-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-18 12:18:43" itemprop="dateModified" datetime="2020-03-18T12:18:43+08:00">2020-03-18</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="MIPS编译环境构建"><a href="#MIPS编译环境构建" class="headerlink" title="MIPS编译环境构建"></a>MIPS编译环境构建</h1><p>通过网上任一教程可以在Ubuntu上成功安装buildroot，例如这篇CSDN教程<a href="https://blog.csdn.net/wxh0000mm/article/details/85691111" target="_blank" rel="noopener">https://blog.csdn.net/wxh0000mm/article/details/85691111</a> 。本质上是这样一个过程：</p>
+<ol>
+<li>下载buildroot，或是通过GitHub clone，或是wget直接下载，下载得到的是一些文件，通过这些文件编译运行得到想要的</li>
+<li>编译配置</li>
+<li>配置结束后编译</li>
+</ol>
+<p>其中有几个问题特殊一点：</p>
+<ol>
+<li>主机内核的选择，可能没有对应主机的版本。我选择了低一个版本的，似乎没有发现问题；</li>
+<li>无法./configure ；可以直接跳过，目录里已经有了Makefile；</li>
+<li>命令和能见到的教程都不一样，而且需要到交叉编译工具目录（buildroot/output/host/usr/bin）下去运行，在此看到的工具命名时mips-linux-gcc ，不在本目录下不可以运行这些指令。或许可以通过添加环境变量使得在全局中均可运行，<strong>但是添加环境变量后仍不可，先放弃</strong>。</li>
+</ol>
+<p>最后，通过教程里的检查方法（查看gcc的版本）即可得知是否安装成功。</p>
+<h1 id="创建批处理文件将-MIPS32-汇编文件编译二进制文件"><a href="#创建批处理文件将-MIPS32-汇编文件编译二进制文件" class="headerlink" title="创建批处理文件将 MIPS32 汇编文件编译二进制文件"></a>创建批处理文件将 MIPS32 汇编文件编译二进制文件</h1><ol>
+<li><p>创建汇编文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.org 0x0</span><br><span class="line">.global _start</span><br><span class="line">.set noat</span><br><span class="line">_start: #需要加以上四行，以便后续编译</span><br><span class="line">  ori $1,$0,0x1100 #$1&#x3D;$0 | 0x1100</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ol>
+<li><p>编译，得到可重定位目标文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;mips-linux-as test.S -o test.o</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ol>
+<li><p>链接，得到可执行目标文件<br>需要在目录下增加链接表述脚本，如果没有则无法链接成功。</p>
+<p>文件名为ram.ld，如下，注意文件格式要求，空格不可以随意省略</p>
+<p>这个文件定义了一个存储块ram及其起始地址、长度；包括三个section，每个section对应着输入文件的.text, .data, .bss </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">MEMORY </span><br><span class="line">        &#123;</span><br><span class="line">        ram     :ORIGIN &#x3D; 0x00000000,LENGTH &#x3D; 0x00001000</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">SECTIONS</span><br><span class="line">&#123;</span><br><span class="line">        .text :</span><br><span class="line">        &#123;</span><br><span class="line">        *(.text)</span><br><span class="line">        &#125; &gt; ram</span><br><span class="line"></span><br><span class="line">        .data :</span><br><span class="line">        &#123;</span><br><span class="line">        *(.data)</span><br><span class="line">        &#125; &gt; ram</span><br><span class="line"></span><br><span class="line">        .bss:</span><br><span class="line">        &#123;</span><br><span class="line">        *(.bss)</span><br><span class="line">        &#125; &gt; ram</span><br><span class="line">&#125;</span><br><span class="line">ENTRY (_start)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;mips-linux-ld -T ram.ld test.o -o test.om</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>将可执行文件转成二进制文件，注意此时使用vi编辑器打开未必能看到的是二进制，此时可以在vi下输入命令<code>:%!xxd</code>，此时即可看到十六进制的指令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;mips-linux-objcopy -O binary test.om test.bin</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>但得到的十六进制指令依旧不能直接作为CPU的指令输入，因为它包含别的内容无论ram.ld内包不包含.data和.bss节，内容都相同。这或许是作为可执行文件不可缺少的内容。而且，对于最后生成的二进制文件，其若没有在vi经过十六进制转换，则输出的将是字符，而非二进制文件。</p>
+</li>
+<li><p>先写Makefile文件</p>
+<figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ifndef</span> CROSS_COMPILE</span><br><span class="line">CROSS_COMPILE = ./mips-linux-</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line">CC = <span class="variable">$(CROSS_COMPILE)</span>as</span><br><span class="line">LD = <span class="variable">$(CROSS_COMPILE)</span>ld</span><br><span class="line">OBJCOPY = <span class="variable">$(CROSS_COMPILE)</span>objcopy</span><br><span class="line">OBJDUMP = <span class="variable">$(CROSS_COMPILE)</span>objdump</span><br><span class="line"></span><br><span class="line">OBJECTS = inst_rom.o</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> CROSS_COMPILE</span><br><span class="line"></span><br><span class="line"><span class="comment"># ********************</span></span><br><span class="line"><span class="comment"># Rules of Compilation</span></span><br><span class="line"><span class="comment"># ********************</span></span><br><span class="line"></span><br><span class="line"><span class="section">all: inst_rom.data</span></span><br><span class="line"></span><br><span class="line"><span class="section">%.o: %.S</span></span><br><span class="line">        <span class="variable">$(CC)</span> <span class="variable">$&lt;</span> -o <span class="variable">$@</span></span><br><span class="line"></span><br><span class="line"><span class="section">inst_rom.om: ram.ld <span class="variable">$(OBJECTS)</span></span></span><br><span class="line">        <span class="variable">$(LD)</span> -T ram.ld <span class="variable">$(OBJECTS)</span> -o <span class="variable">$@</span></span><br><span class="line"></span><br><span class="line"><span class="section">inst_rom.bin: inst_rom.om</span></span><br><span class="line">        <span class="variable">$(OBJCOPY)</span> -O binary <span class="variable">$&lt;</span> <span class="variable">$@</span></span><br><span class="line"></span><br><span class="line"><span class="section">inst_rom.x: inst_rom.bin</span></span><br><span class="line">        xxd <span class="variable">$&lt;</span> <span class="variable">$@</span></span><br><span class="line"></span><br><span class="line"><span class="section">inst_rom.data: inst_rom.x inst_num.txt</span></span><br><span class="line">        ./obj2inst <span class="variable">$^</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="section">clean:</span></span><br><span class="line">        rm -f *.o *.om *.bin *.data</span><br></pre></td></tr></table></figure>
+<p>注释：</p>
+<p>makefile语法是</p>
+<figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">目标：依赖文件</span><br><span class="line">	命令</span><br></pre></td></tr></table></figure>
+<p>$^ ：所有依赖文件</p>
+<p>$&lt; ：第一个依赖文件</p>
+<p>$@：目标文件</p>
+<ol>
+<li>用户输入make all，依赖于inst_rom.x inst_num.txt<br>inst_num.txt作为输入文件，原因是需要知道一共有多少条指令；<br>objx2inst是后续要写的一个可执行文件，作用是根据有多少条指令和转换出来的十六进制文件得到inst</li>
+<li>inst_rom.x 依赖于 inst_rom.bin</li>
+<li>inst_rom.bin 依赖于 inst_rom.om</li>
+<li>inst_rom.om 依赖于 inst_rom.o</li>
+<li>inst_rom.o 依赖于 inst_rom.S</li>
+</ol>
+</li>
+<li><p>编写obj2inst代码，x文件是这样的</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">00000000: 0002 4942 0023 5006 0002 2403 0026 2807  ..IB.#P...$..&amp;(.</span><br><span class="line">00000010: 3c01 0101 3c02 1011 0000 0000 0022 1825  &lt;...&lt;........&quot;.%</span><br><span class="line">00000020: 0000 067e 0000 0000 0000 0000 0000 0000  ...~............</span><br><span class="line">00000030: 0000 0000 0000 0000 0000 0100 0101 0001  ................</span><br><span class="line">00000040: 0000 0000 0000 0000 0000 0000 0000 0000  ................</span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">char</span>* <span class="title">stringcat</span><span class="params">(<span class="keyword">char</span>* num1,<span class="keyword">char</span>* num2)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> *argv[])</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> n;<span class="comment">//the num of inst</span></span><br><span class="line">        <span class="keyword">char</span>  num1[<span class="number">5</span>],num2[<span class="number">5</span>];</span><br><span class="line">        <span class="keyword">int</span> t;</span><br><span class="line">        freopen(argv[<span class="number">2</span>],<span class="string">"r"</span>,<span class="built_in">stdin</span>);</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n);</span><br><span class="line">        fclose(<span class="built_in">stdin</span>);</span><br><span class="line">        freopen(argv[<span class="number">1</span>],<span class="string">"r"</span>,<span class="built_in">stdin</span>);</span><br><span class="line">        freopen(<span class="string">"inst_rom.data"</span>,<span class="string">"w"</span>,<span class="built_in">stdout</span>);</span><br><span class="line">        <span class="keyword">char</span> c=getchar();</span><br><span class="line">        <span class="keyword">while</span>(n&gt;<span class="number">0</span>)&#123;</span><br><span class="line">                <span class="keyword">while</span>(c!=EOF&amp;&amp;c!=<span class="string">':'</span>)&#123;</span><br><span class="line">                        c=getchar();</span><br><span class="line">                &#125;</span><br><span class="line">                t=<span class="number">4</span>;              </span><br><span class="line">				<span class="keyword">while</span>(t&gt;<span class="number">0</span>&amp;&amp;n&gt;<span class="number">0</span>)&#123;</span><br><span class="line">                <span class="keyword">if</span>(c!=EOF)&#123;</span><br><span class="line">                        n--;</span><br><span class="line">                        <span class="built_in">scanf</span>(<span class="string">"%s"</span>,num1);</span><br><span class="line">                        <span class="built_in">scanf</span>(<span class="string">"%s"</span>,num2);</span><br><span class="line">                        <span class="built_in">printf</span>(<span class="string">"%s\n"</span>,stringcat(num1,num2));</span><br><span class="line">                        t--;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">while</span>(c!=<span class="string">'\n'</span>) c=getchar();</span><br><span class="line">        &#125;</span><br><span class="line">        fclose(<span class="built_in">stdin</span>);</span><br><span class="line">        fclose(<span class="built_in">stdout</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">char</span>* <span class="title">stringcat</span><span class="params">(<span class="keyword">char</span>* num1,<span class="keyword">char</span>* num2)</span></span>&#123;</span><br><span class="line">        <span class="keyword">char</span>* num;</span><br><span class="line">        num=(<span class="keyword">char</span>*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">char</span>)*<span class="number">8</span>);</span><br><span class="line">        <span class="keyword">int</span> i;</span><br><span class="line">        <span class="keyword">for</span> (i=<span class="number">0</span>;i&lt;<span class="number">4</span>;i++)&#123;</span><br><span class="line">                num[i]=num1[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (i=<span class="number">4</span>;i&lt;<span class="number">8</span>;i++)&#123;</span><br><span class="line">                num[i]=num2[i<span class="number">-4</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        num[<span class="number">8</span>]=<span class="string">'\0'</span>;</span><br><span class="line">        <span class="keyword">return</span> num;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>注：</p>
+<ol>
+<li>输入sync指令，提示<code>code/inst_rom.S:12: Error: opcode not supported on this processor: mips1 (mips1) &#39;sync&#39;</code></li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/10/%E5%8F%B3%E7%BA%BF%E6%80%A7%E8%AF%AD%E8%A8%80%E7%9A%84%E6%80%A7%E8%B4%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Beenle Yi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Beenle's Space">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/10/%E5%8F%B3%E7%BA%BF%E6%80%A7%E8%AF%AD%E8%A8%80%E7%9A%84%E6%80%A7%E8%B4%A8/" class="post-title-link" itemprop="url">右线性语言的性质</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-10 11:21:46" itemprop="dateCreated datePublished" datetime="2020-02-10T11:21:46+08:00">2020-02-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-02-11 15:55:52" itemprop="dateModified" datetime="2020-02-11T15:55:52+08:00">2020-02-11</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="化简确定有限自动机"><a href="#化简确定有限自动机" class="headerlink" title="化简确定有限自动机"></a>化简确定有限自动机</h1><p>$Def.$ 状态等价，对任意输入的字符串，到达的终态相同</p>
+<p>$Def.$ 状态可区分，即不等价</p>
+<p>$Def.$ 状态不可达，即任意输入的字符串，不可到达此状态</p>
+<h3 id="化简步骤"><a href="#化简步骤" class="headerlink" title="化简步骤"></a>化简步骤</h3><ol>
+<li>划分终止状态和非终止状态，成为基本划分</li>
+<li>在同一状态集中的状态，若输入某字符后到达不同状态集中的状态，则按其去向不同划分为不同的状态集</li>
+<li>重复第二步</li>
+<li>将不可达状态删去</li>
+</ol>
+<p>技巧：按输入的字符的顺序，对每个状态看其下一状态，进行划分。</p>
+<h1 id="右线性语言-pumping-lemma"><a href="#右线性语言-pumping-lemma" class="headerlink" title="右线性语言 pumping lemma"></a>右线性语言 pumping lemma</h1><p>$The.$ Let $L$ be a regular language. Then there exists a constant $n$ (which depends on $L$) such that for every string $\omega$ in $L$ such that $| \omega| \geq n$ ,we can break $\omega$ into three strings, $\omega=xyz$, such that :</p>
+<ol>
+<li>$y \neq \epsilon$ </li>
+<li>$|xy| \leq n$</li>
+<li>For all $k \ge 0$, the string $xy^kz$ is also in $L$</li>
+</ol>
+<h1 id="右线性语言-封闭性"><a href="#右线性语言-封闭性" class="headerlink" title="右线性语言 封闭性"></a>右线性语言 封闭性</h1><p>$L_1 \bigcup L_2,L_1L_2,L_1^*,\bar{L},L_1 \bigcap L_2$，右线性语言对置换是封闭的 </p>
+<p>证明封闭性，以$L_1^*$：</p>
+<ol>
+<li>构造一个语言，由于前面证明的等价性，可以构造有限自动机$M$</li>
+<li>证明有限自动机符合题目要求，即等价于 $L_1^*$</li>
+<li>证明 $L(M) \subset L_1^<em>,L_1^</em> \subset L(M)$ ，即等价</li>
+</ol>
+<h1 id="判定问题"><a href="#判定问题" class="headerlink" title="判定问题"></a>判定问题</h1><p>对于以下三个问题，均可以判定：</p>
+<ol>
+<li>判定正则集的一个表达形式所定义的语言是否为空，算法复杂度 $O（n^2）$</li>
+<li>判定一个字符串是否属于给定的一个正则集的表达形式，算法复杂度 $DFA:O(n),NFA:O(n·2^s)$，s为NFA的状态数，n为字符串的长度</li>
+<li>判定两个正则集的表达形式是否等价，算法复杂度 $O(n^2)$</li>
+</ol>
+<h1 id="双向有限自动机"><a href="#双向有限自动机" class="headerlink" title="双向有限自动机"></a>双向有限自动机</h1><p>$\delta:Q×T \rightarrow Q×\{L,R\}$ </p>
+<p>$\delta(q_1,a)=\{q_2,L\}$ 表示在 $q_1$ 状态读入$a$后，进入$q_2$ 状态，并且读头左移一位。</p>
+<p>使用格局表示，设 $abcq_1abc \vdash abq_2cabc $ </p>
+<h1 id="有输出的有限自动机"><a href="#有输出的有限自动机" class="headerlink" title="有输出的有限自动机"></a>有输出的有限自动机</h1><p>$Def.$ $M=(Q,T,R,\delta,g,q_0)$ ，$R$ 是有限输出字母表，$g$ 是输出函数，称为米兰机</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/10/%E5%8F%B3%E7%BA%BF%E6%80%A7%E6%96%87%E6%B3%95%E4%B8%8E%E6%9C%89%E9%99%90%E8%87%AA%E5%8A%A8%E6%9C%BA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Beenle Yi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Beenle's Space">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/10/%E5%8F%B3%E7%BA%BF%E6%80%A7%E6%96%87%E6%B3%95%E4%B8%8E%E6%9C%89%E9%99%90%E8%87%AA%E5%8A%A8%E6%9C%BA/" class="post-title-link" itemprop="url">右线性文法与有限自动机</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-02-10 10:37:44 / 修改时间：11:21:35" itemprop="dateCreated datePublished" datetime="2020-02-10T10:37:44+08:00">2020-02-10</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="右线性文法与有限自动机"><a href="#右线性文法与有限自动机" class="headerlink" title="右线性文法与有限自动机"></a>右线性文法与有限自动机</h1><p>$G=(N,T,P,S),M=(Q,T,\delta,q_0,F)$</p>
+<ol>
+<li><p>从右线性文法构造有限自动机</p>
+<p>$Q=N \bigcup \{H\},q_0=S$ </p>
+<script type="math/tex; mode=display">F=\left\{\begin{aligned} \{H,S\} & & 当S \rightarrow  \varepsilon \in P \\ \{H\} & & 否则 \end{aligned}\right.</script><p>$\delta$ 定义：</p>
+<p>对 $A，B \in T,a \in T$ ，当$A \rightarrow aB \in P$ ，则$B \in \delta(A,a)$ ；当$A \rightarrow a \in P$ 则$H \in \delta(A,a)$  ，且 $\delta(H,a) = \empty$ </p>
+</li>
+<li><p>从有限自动机构造右线性文法</p>
+</li>
+</ol>
+<p>$N=Q,S=q_0$ 当 $\delta(q_m,a)=q_r$ ，则 $ q_m \rightarrow aq_r $ ；若 $q_r \in F$ 则 $q_m \rightarrow a$ </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/05/%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%86%99CPU/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Beenle Yi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Beenle's Space">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/05/%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%86%99CPU/" class="post-title-link" itemprop="url">自己动手写CPU</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-05 10:52:01" itemprop="dateCreated datePublished" datetime="2020-02-05T10:52:01+08:00">2020-02-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-10 16:46:16" itemprop="dateModified" datetime="2020-03-10T16:46:16+08:00">2020-03-10</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="MIPS基础简记"><a href="#MIPS基础简记" class="headerlink" title="MIPS基础简记"></a>MIPS基础简记</h1><p>MIPS思想：使用相对简单的指令，结合优秀的编译器以及采用流水线执行指令的硬件，就可以用更少的晶元面积生产更快的处理器。</p>
+<p><a href="https://blog.csdn.net/wbwwf8685/article/details/53762908" target="_blank" rel="noopener">https://blog.csdn.net/wbwwf8685/article/details/53762908</a> 关于MIPS通用寄存器</p>
+<p>MIPS32架构中定义的特殊寄存器有三个：PC（Program Counter程序计数器）、HI（乘除结果高位寄存器）、LO（乘除结果低位寄存器）。进行乘法运算时，HI和LO保存乘法运算的结果，其中HI存储高32位，LO存储低32位；进行除法运算时，HI和LO保存除法运算的结果，其中HI存储余数，LO存储商。</p>
+<h1 id="ORI指令实现"><a href="#ORI指令实现" class="headerlink" title="ORI指令实现"></a>ORI指令实现</h1><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>31-26</th>
+<th>25-21</th>
+<th>20-16</th>
+<th>15-0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>001101</td>
+<td>rs</td>
+<td>rt</td>
+<td>imm</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>imm无符号拓展后和rs寄存器的内容进行或运算，结果保存到rt寄存器中。</p>
+<p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200206153402136.png" alt="image-20200206153402136"></p>
+<p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200206153755290.png" alt="image-20200206153755290"></p>
+<p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200206153841097.png" alt="image-20200206153841097"></p>
+<p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200207210901170.png" alt="image-20200207210901170"></p>
+<h5 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h5><ol>
+<li>取指IF<ol>
+<li>将pc_reg的值送到inst_rom</li>
+<li>将rom中对应的值传到IF/ID中inst</li>
+<li>pc_reg+4传回pc中</li>
+</ol>
+</li>
+<li>译码ID<ol>
+<li>从inst中取各段穿入regs，取出rs,rt给寄存器regs，imm给立即数拓展ext</li>
+<li>imm给ext拓展，==ctrl信号==mux_regs/imm为1，传入ID/EX中的ope2</li>
+<li>读出regs[rs]传入ID/EX中的ope1</li>
+</ol>
+</li>
+<li>执行EX<ol>
+<li>==ctrl信号==给alu做or运算，结果传入EX/MM中的ans</li>
+</ol>
+</li>
+<li>访存MM<ol>
+<li>ans传入到MM/WB中的ans</li>
+</ol>
+</li>
+<li>回写WB<ol>
+<li>==ctrl信号==给regs请求写，写入rt对应的寄存器</li>
+</ol>
+</li>
+</ol>
+<h5 id="器件："><a href="#器件：" class="headerlink" title="器件："></a>器件：</h5><ol>
+<li>PC寄存器 pc_reg</li>
+<li>指令存储器 rom</li>
+<li>加法器pc_reg加4</li>
+<li>寄存器 regs</li>
+<li>立即数拓展 ext</li>
+<li>选择器mux_regs/imm</li>
+</ol>
+<h5 id="疑问"><a href="#疑问" class="headerlink" title="疑问"></a>疑问</h5><ol>
+<li>一个always语句块处理一个输出，这样是为了？</li>
+<li>在ID阶段，ID和寄存器分开这是？</li>
+</ol>
+<h1 id="调试过程"><a href="#调试过程" class="headerlink" title="调试过程"></a>调试过程</h1><ol>
+<li>综合，根据提示错误修改</li>
+<li>发现不加入仿真文件时综合成功</li>
+<li>对inst_rom模块仿真</li>
+<li>一个一个源文件加入后仿真</li>
+</ol>
+<h1 id="vivado-错误记录"><a href="#vivado-错误记录" class="headerlink" title="vivado 错误记录"></a>vivado 错误记录</h1><ol>
+<li><p>调用子模块，==输出==必须是wire类型，输入没有要求</p>
+</li>
+<li><p>宏定义文件define.v不需要include在每个文件里?</p>
+</li>
+<li><p>要求不优化掉reg类型，在reg类型前加入</p>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(*noprune*)<span class="keyword">reg</span>[<span class="meta">`RegBus] regs[0:`RegNum-1];</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Vivado Synthesis supports $readmemb/$readmemh to initialize RAMs only in scenarios when block RAMs are inferred.</p>
+<p>In situations where memory is not inferred, Vivado synthesis does not support these tasks, and instead generates the warning message.</p>
+<p>To work around it, declare one memory address redundant and use it as the memory index.<br>意思是，不能直接用值作为下标访问RAM内存</p>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//reg1&lt;=regs[1];错误</span></span><br><span class="line">reg1&lt;=regs[addr];<span class="comment">//正确</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>case，if不完整则会产生latch，若当前非时序逻辑，则产生错误；</p>
+</li>
+<li><p>vivado WARNING：Multi-driven net Q with xth driver pin 一般是由于在多个always语句块里对同一个值赋值</p>
+</li>
+<li><ul>
+<li><p>[x] modelsim仿真</p>
+</li>
+<li><p>[x] 统一原理图命名</p>
+</li>
+</ul>
+</li>
+</ol>
+<h1 id="verilog语法"><a href="#verilog语法" class="headerlink" title="verilog语法"></a>verilog语法</h1><h3 id="使用文件作为输入"><a href="#使用文件作为输入" class="headerlink" title="使用文件作为输入"></a>使用文件作为输入</h3><p>在仿真时需要测试文件，部分输入可以直接从文件读取。此时将会将文件的内容读入到rom变量中</p>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">initial</span> <span class="built_in">$readmemh</span> (<span class="string">"E:/vivadoproject/pc_demo/rom.data"</span>,rom);</span><br></pre></td></tr></table></figure>
+<h3 id="经验总结"><a href="#经验总结" class="headerlink" title="经验总结"></a>经验总结</h3><ol>
+<li>命名规则，必须统一、易记忆</li>
+</ol>
+<h3 id="疑问-1"><a href="#疑问-1" class="headerlink" title="疑问"></a>疑问</h3><ol>
+<li>部分情况需要用的中间wire量，定义在语句块中还是全局中</li>
+</ol>
+<p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200216155711546.png" alt="image-20200216155711546"></p>
+<p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200216155728830.png" alt="image-20200216155728830"></p>
+<p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200216155739645.png" alt="image-20200216155739645"></p>
+<p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200216155750705.png" alt="image-20200216155750705"></p>
+<p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200216230704978.png" alt="image-20200216230704978"></p>
+<p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200217122233539.png" alt="image-20200217122233539"></p>
+<h3 id="设计说明"><a href="#设计说明" class="headerlink" title="设计说明"></a>设计说明</h3><h4 id="ex"><a href="#ex" class="headerlink" title="ex"></a>ex</h4><p>只采用8位的aluop区分不同的指令要求，注意此时已经得到具体的两个操作数，对于做同一个操作但源操作数不同的指令在此时已经不需要区分（例如R型的or指令和I型的ori指令，都做or运算即可）；对于R型指令，直接在function_code前加00作为aluop；对于其他指令，暂且直接在op前加01作为aluop</p>
+<p>对于不再使用的alusel，暂且不管，待到可以实现完成后删除即可。</p>
+<h4 id="id"><a href="#id" class="headerlink" title="id"></a>id</h4><p>首先判断op，若为000000，则继而判断function_code（==在这里假设了不存在op和function_op相同但操作不同的两条指令==），通过判断function_code，可以直接得到aluop；若不为000000，则直接得到指令类型，获得aluop。在这个阶段，需要给wreg_cntl, reg1_mux, reg2_mux, reg1_addr, reg2_addr, wreg_addr赋值，另外reg1_data和reg2_data是在以上值赋值完后再改变的，会各占一个always语句块。</p>
+<p>移位指令将op2做操作数，op1做移动的量。</p>
+<p>nop,ssnop,pref,sync全部当作nop处理，在id中没有特别的分支，是在R型指令的default里处理的。</p>
+<h3 id="测试文件"><a href="#测试文件" class="headerlink" title="测试文件"></a>测试文件</h3><h4 id="第一部分"><a href="#第一部分" class="headerlink" title="第一部分"></a>第一部分</h4><p> :+1: lui $1,0x0101   0011 1100 0000 0001  </p>
+<p>:+1: lui $2,0x1011   0011 1100 0000 0002</p>
+<p>:+1: nop </p>
+<p>:+1: sync</p>
+<p>:+1: ssnop</p>
+<p>:+1: ​ or 3,1,2 0000 0000 0010 0010 00011 00000 100101</p>
+<p>:+1: and 4,1,2  0000 0000 0010 0010 0010 0000 00 10 0100</p>
+<p>:+1: andi 5,2,0x1100  001100 00 010 00101 </p>
+<p>:+1: xori 6,2,0x0011   0011 10 00 010 0 0110 </p>
+<p>一些书写的小错误改正</p>
+<ol>
+<li>lui指令：控制信号全部正确，但输出的操作数2错误；==imm_is，Islui命令在全局中有定义，但仿真时结果与定义的不同，后面改成直接在每个条件分支里每个控制信号都赋值==</li>
+</ol>
+<h4 id="第二部分"><a href="#第二部分" class="headerlink" title="第二部分"></a>第二部分</h4><p>:+1:pref 110011000……</p>
+<p>:+1:  xor   $7,$1,$3  </p>
+<p>:+1:nor   $8,$1,$4   </p>
+<p>:+1:andi  $5,$6,0x1100  </p>
+<p>以下为测试移位指令，特意准备，其中算术移位用其他数据测试了</p>
+<p> lui $1,0x1011  </p>
+<p>ori $2,$0,0x0108  </p>
+<p>nop </p>
+<p>nop</p>
+<p>nop #==一开始忘记加nop，导致错误不理解==</p>
+<p>sllv $3,$1,$2  </p>
+<p>srav $4,$1,$2  </p>
+<p>sra $5,$1,0x4  </p>
+<p>sll $6,$1,0x4  </p>
+<p>srlv $7,$1,$2  </p>
+<p>srl $8,$1,$2</p>
+<h3 id="移位指令的执行命令"><a href="#移位指令的执行命令" class="headerlink" title="移位指令的执行命令"></a>移位指令的执行命令</h3><figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wreg_data_o&lt;=(&#123;<span class="number">32</span>&#123;op2[<span class="number">31</span>]&#125;&#125;&lt;&lt;(<span class="number">32'd32</span>-op1))|op2&gt;&gt;op1; <span class="comment">//SRA</span></span><br><span class="line">wreg_data_o&lt;=(&#123;<span class="number">32</span>&#123;op2[<span class="number">31</span>]&#125;&#125;&lt;&lt;(<span class="number">32'd32</span>-(op1[<span class="number">4</span>:<span class="number">0</span>])))|op2&gt;&gt;(op1[<span class="number">4</span>:<span class="number">0</span>]); <span class="comment">//SRAL，注意op1[4:0]加括号，不能确定计算优先级</span></span><br></pre></td></tr></table></figure>
+<h1 id="五个时钟周期"><a href="#五个时钟周期" class="headerlink" title="五个时钟周期"></a>五个时钟周期</h1><ol>
+<li>pc_reg改变；inst_rom随时读；</li>
+<li>if_id；</li>
+<li>id_ex；</li>
+<li>ex_mem；</li>
+<li>mem_wb；</li>
+</ol>
+<p>其中，regfile的写是时钟上升沿写，所以写的结果是第六个时钟上升沿</p>
+<h1 id="hazard"><a href="#hazard" class="headerlink" title="hazard"></a>hazard</h1><ol>
+<li><p>data hazard</p>
+<ol>
+<li>相隔两条指令，即回写和译码在同一个时钟</li>
+</ol>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> ( (we==<span class="meta">`WriteEnable) &amp;&amp; (waddr!=`RegNumLog2'h0) &amp;&amp; (waddr==raddr1) ) begin</span></span><br><span class="line">                    rdata1&lt;=wdata;</span><br><span class="line"><span class="keyword">end</span>;</span><br></pre></td></tr></table></figure>
+<p>将EX\MEM的数据提前回传到ID 中，包括</p>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mem_wdata;</span><br><span class="line">mem_waddr;</span><br><span class="line">mem_wcntl;</span><br><span class="line">ex_wdata;</span><br><span class="line">ex_waddr;</span><br><span class="line">ex_wcntl;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ol>
+<li><p>control hazard</p>
+</li>
+<li><p>load 相关的data hazard</p>
+</li>
+</ol>
+<h1 id="移动指令"><a href="#移动指令" class="headerlink" title="移动指令"></a>移动指令</h1><p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200218194257456.png" alt="image-20200218194257456"></p>
+<p>0000 00 00 010 0 0001 0010 0 000 0000 1010  </p>
+<p>0000 0000 0110 0001 0010 0000 0000 1011</p>
+<p>0000 0000 0110 0010 0010 0000 0000 1011</p>
+<p>0000 0000 0100 0011 0010 0000 0000 1010</p>
+<p>HI：存储乘法的高32位或除法的余数</p>
+<p>LO：存储乘法的低32位或除法的商</p>
+<p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200218200313909.png" alt="image-20200218200313909"></p>
+<p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200218200343442.png" alt="image-20200218200343442"></p>
+<p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200218202344830.png" alt="image-20200218202344830"></p>
+<h3 id="疑问-2"><a href="#疑问-2" class="headerlink" title="疑问"></a>疑问</h3><ol>
+<li>此处没有必要增加这么多变量，将hilo纳入到regs中，编号32和33即可</li>
+<li>此处在EX模块和《自己动手写cpu》的思路不同，不过总体是实现了相同的内容</li>
+<li>HILO部分，没有改变HI的命令，但HI的值却在改变，而LO没有这种情况 后面将EX模块中mtlo, mthi中分别对hi, lo等于输入的值的语句去掉后正常, 但中间LO有一段不明的XX不定 </li>
+<li>latch存在，会出现错误。但不明白为何导致了latch，也无法修改</li>
+</ol>
+<p><strong>吸取教训, 对即将要写的代码有记录, 写完一部分要检查</strong></p>
+<p>存在问题</p>
+<ul>
+<li>[x] HILO正确读取了寄存器，但是没有读入到HILO，也没有读入相应寄存器  最终发现原因是EX模块有线没有接上</li>
+<li>[x] movn和movz不知道为什么最终ID译码出来的reg2_data_o有误，读入的reg2_data_i正确 ——reg2_mux_o出错</li>
+</ul>
+<h1 id="算术指令"><a href="#算术指令" class="headerlink" title="算术指令"></a>算术指令</h1><p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200219155526130.png" alt="image-20200219155526130"></p>
+<p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200219160232234.png" alt="image-20200219160232234"></p>
+<ol>
+<li>减法&amp;有符号比较<br>计算reg2的补码==reg2t==,使用加法计算reg1+reg2t===addans==</li>
+<li>判断溢出==Isoverflow==<ol>
+<li>reg1,reg2t是正数,addans是负数;</li>
+<li>reg1,reg2t是负数,addans是正数;</li>
+</ol>
+</li>
+<li><ol>
+<li>add<br>使用reg1+reg2,判断溢出,溢出则不写值</li>
+<li>addu<br>使用reg1+reg2,不判断溢出</li>
+<li>sub<br>使用reg1+reg2t,判断溢出,溢出则不写值</li>
+<li>subu<br>使用reg1+reg2,不判断溢出</li>
+<li>slt ==Islt==<br>使用reg1+reg2t, 存在溢出的可能不能直接判断, 若reg1负,reg2正,则小于成立;若reg1正,reg2正,结果是负则小于成立;若reg1负,reg2负,结果是负成立</li>
+<li>sltu<br>使用默认的&lt;比较得到的结果即可</li>
+</ol>
+</li>
+</ol>
+<p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200219160247740.png" alt="image-20200219160247740"></p>
+<p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200219160316523.png" alt="image-20200219160316523"></p>
+<p>2部分的指令不需要新建aluop，直接使用1部分的</p>
+<p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200219160332531.png" alt="image-20200219160332531"></p>
+<p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200219160353581.png" alt="image-20200219160353581"></p>
+<p>如果用for循环，但Verilog中并没有break；如果使用while循环，则不可综合。最终只能选择用书中的case，这种代价是代码非常复杂</p>
+<p>0111 00 00 001 0 0000 0001 0 000 00 10 0001 </p>
+<p>011100 00001 00000 00010 00000 100000 </p>
+<p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200219160415285.png" alt="image-20200219160415285"></p>
+<p>乘法规则：无符号相乘，双倍的位数结果即正确结果；有符号相乘，将负数转成补码后乘，如果同号相乘，双倍的位数结果即正确结果，如果异号相乘，双倍的位数结果的补码即正确结果。</p>
+<ul>
+<li>[x] 修改ID,EX部分</li>
+<li>[x] 立即数部分修改</li>
+<li>[x] 1</li>
+<li>[x] 2</li>
+<li>[x] 3</li>
+<li>[x] 4</li>
+</ul>
+<p>出现只仿真到第一条指令的ID阶段，第一条指令是ori，仿真时长只有一个周期；</p>
+<p>提示fatal error，将EX的加法指令的结果改成33位后fatal error 不存在，但是依旧不能继续仿真。</p>
+<p>应该是在ID阶段出了问题</p>
+<p>发现是又在不同的语句块里对同一个reg赋值了，原因是新增了一些else和default情况，但是忽略了是在另外的模块里赋值；</p>
+<p>但并未就此解决仿真问题，还有错误</p>
+<ol>
+<li><p>case item is unreachable </p>
+</li>
+<li><p>multi-driven 这个问题是由于在if里又case语句，有部分reg变量既在if开始赋值，又在case中被赋值，导致了这个问题。将所有的又补上了，==但有可能有错误==后续将指令再测试一次，但是后面发现可能不是这个问题！是由一个case少写了default！！！</p>
+<p>结果可以仿真了，但critical warning仍然存在</p>
+</li>
+</ol>
+<p>仿真错误</p>
+<ol>
+<li>拼写错误 addr写成cntl，导致写信号出错</li>
+<li>Islt, Isoverflow这些assign 的wire量都在应该为1 的时候值为不定，后面将定义时的<code>wire Islt=1&#39;b0;</code>后面的赋值删去后，正常。</li>
+<li>不应该符号拓展的拓展了——将各种情况中需要imm的都加上sign_ext的值</li>
+<li>后面的mul也需要调试，但是发现原因是通过云服务器的mips32-linux-gcc编译出来的二进制指令是错误的，既忽略了mul指令，也译错了mult</li>
+</ol>
+<h1 id="算术-后六条"><a href="#算术-后六条" class="headerlink" title="算术 后六条"></a>算术 后六条</h1><p>即日起，使用modelsim仿真，前面已经处理好了，但是由于modelsim界面太丑了，又直接用vivado的仿真，但vivado的仿真还是太慢了，每次添加新的观测量还要重启，但modelsim不需要。改用modelsim。</p>
+<h3 id="流水线暂停"><a href="#流水线暂停" class="headerlink" title="流水线暂停"></a>流水线暂停</h3><p>策略：设在X阶段要求流水线暂停，则将X及其前面的阶段保持，即保持各输出流水线的值，将X后面的阶段继续执行。</p>
+<p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200221095138831.png" alt="image-20200221095138831"></p>
+<p>stall是六个字节，分别都代表PC增加和五个执行阶段是否暂停；</p>
+<p>完成了stall，但是没有测试</p>
+<h3 id="乘累加乘累减"><a href="#乘累加乘累减" class="headerlink" title="乘累加乘累减"></a>乘累加乘累减</h3><p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200221105332937.png" alt="image-20200221105332937"></p>
+<p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200221125239069.png" alt="image-20200221125239069"></p>
+<p>0111 0000 0010 0010 0000 0000 0000 0000 70220000</p>
+<p>0111 0000 0010 0010 0000 0000 0000 0001 70220001 </p>
+<p>0111 0000 0010 0010 0000 0000 0000 0100 70220004</p>
+<p>0111 0000 0010 0010 0000 0000 0000 0101 70220005</p>
+<p>执行阶段分两个时钟周期进行：</p>
+<ol>
+<li>做乘法</li>
+<li>做加减法</li>
+</ol>
+<p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200221111722645.png" alt="image-20200221111722645"></p>
+<p>那么需要</p>
+<p>第一个周期：</p>
+<ol>
+<li>让流水线前面的部分暂停一个周期</li>
+<li>执行乘法得到hilo_temp_o，将结果传到EX_MEM</li>
+<li>将cnt 0传到EX_MEM</li>
+</ol>
+<p>第二个周期：</p>
+<ol>
+<li>cnt 1回传到ex</li>
+<li>不让流水线暂停</li>
+<li>执行加法或减法，结果在hi，lo中</li>
+</ol>
+<p>仿真错误：</p>
+<ol>
+<li><p>MULT没有正常写入hilo </p>
+</li>
+<li><p>madd和maddu没有维持两个周期，inst改变了</p>
+<p>以上两点都是因为没有处理好在流水线寄存器中的stall信号，在前后都stop的时候必须什么都不做，不能读前面的值，原因是stall信号在ex阶段才出现，前面的值是在if、id阶段会改变的，如果读前面阶段的值，则会导致继续运行下去</p>
+</li>
+<li><p>HI，LO没有正常传输，后面发现后面复制的代码又忘记修改了</p>
+</li>
+<li><p>结果有问题，发现原来一直用的是输入的hi ,lo 来计算，这样并没有解决data hazard，应该用最新的hilo</p>
+</li>
+</ol>
+<h3 id="除法"><a href="#除法" class="headerlink" title="除法"></a>除法</h3><p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200221212116294.png" alt="image-20200221212116294"></p>
+<p>0043001a</p>
+<p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200221212143984.png" alt="image-20200221212143984"></p>
+<p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200222105346602.png" alt="image-20200222105346602"></p>
+<p>自己的思路：</p>
+<p>将负数转成正数，记下符号，然后判断在1之前有多少个零(clz)，得知有k位，进入div模块，进行k个周期，返回时有信号；没有返回信号的时候就一直都是stall</p>
+<p>仿真错误：</p>
+<ol>
+<li>ready信号根本没有输入，一直在不定状态，怀疑根本没有接上ex和div——原因是在测试之前修改了tb文件，rstEnable的时候没有时钟，导致没有初始化</li>
+<li>发现op1没有正常传入div，发现原因是soc有错误；发现div 大部分变量为高阻是因为cancel没给确定的值</li>
+<li>dividend没有量，怀疑是重复书中的多次定义有问题；将初始化放到rstenable处——还是不行，怀疑是只对中间一部分定义导致的；——依旧不对，最后发现问题是，在同一个语句块里对变量a定义，然后变量a又在&lt;=的右边，这样是不行的，a的值还是不定。所以将a改成阻塞赋值</li>
+<li>hilo的输出不对——发现Bus长度写错了，多处写错</li>
+</ol>
+<p>最后仔细分析除法的思路</p>
+<ol>
+<li>第一个周期只在EX模块，进行数据输入工作</li>
+<li>接着是三十二个在DIV的周期，每个周期有EX的输入，同时EX保持stall；计算方法是将被除数从高到低移位计算。dividend是65位的，初始时[32:1]是被除数temp_op1，之所以不是从0开始，是因为这将当作已经往前移一位的结果，进行被除数-除数后，第一个结果存入dividend[0]，如果是减法结果大于0，则将减后剩下的数字存到[64:33]，dividend[31:0]移到[32:1]，将1存到dividend[0]；如果小于0，则说明这时候的被除数还不够减除数，需要移多一位，这时候将dividend[63:0]移到[64:1]，将0存入dividend[0]</li>
+<li>结束计算的32个周期后，总第34个周期告知EX 结果已经ready；总第35个周期EX完成div</li>
+</ol>
+<h1 id="转移指令"><a href="#转移指令" class="headerlink" title="转移指令"></a>转移指令</h1><p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200222200322756.png" alt="image-20200222200322756"></p>
+<p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200222201018473.png" alt="image-20200222201018473"></p>
+<p><img src="C:\Users\易璐\AppData\Roaming\Typora\typora-user-images\image-20200223101902962.png" alt="image-20200223101902962"></p>
+<p>PC：读到延迟槽的指令</p>
+<p>ID：译码，发现是转移指令，判断，若要跳转，则next_inst_in_delayslot_o为真，计算出要回写的地址到link_addr_o，brach_target_addr_o设成要跳转的地址，branch_flag设为1；</p>
+<p>下一时钟：</p>
+<p>PC：收到branch_flag和brach_target_addr后，修改PC的值，读出正确的inst</p>
+<p>ID/EX：收到next_inst_in_delayslot，传输is_in_delayslot给ID，接受id_is_delay_inst和id_link_addr并传输到EX</p>
+<p>EX：得到link_addr，执行</p>
+<p>ID：收到延迟槽指令译码，收到is_in_delayslot</p>
+<p>下一时钟：</p>
+<p>ID：得到应该执行的指令，继续执行</p>
+<p>EX：得到is_delayslot，选择执不执行</p>
+<h1 id="MIPS32-1-0"><a href="#MIPS32-1-0" class="headerlink" title="MIPS32_1.0"></a>MIPS32_1.0</h1><ul>
+<li>[x] ori一条</li>
+<li>[x] 逻辑，移位，空，相关data hazard</li>
+<li>[x] 移动，相关data hazard</li>
+<li>[x] 算术 复杂</li>
+<li>[x] 转移</li>
+<li>[ ] 加载 复杂</li>
+<li>[ ] 协处理 </li>
+<li>[ ] 异常 复杂</li>
+</ul>
+<p>8+6+4+6+21+14</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/02/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA%E7%9A%84%E5%85%B3%E7%B3%BB/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -190,16 +1084,16 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              <span class="post-meta-item-text">发表于</span>
 
-              <time title="Created: 2020-02-02 20:13:36" itemprop="dateCreated datePublished" datetime="2020-02-02T20:13:36+08:00">2020-02-02</time>
+              <time title="创建时间：2020-02-02 20:13:36" itemprop="dateCreated datePublished" datetime="2020-02-02T20:13:36+08:00">2020-02-02</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-03 12:16:39" itemprop="dateModified" datetime="2020-02-03T12:16:39+08:00">2020-02-03</time>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-02-03 12:16:39" itemprop="dateModified" datetime="2020-02-03T12:16:39+08:00">2020-02-03</time>
               </span>
 
           
@@ -270,7 +1164,7 @@
         
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/01/%E3%80%8A%E5%B9%B3%E5%87%A1%E7%9A%84%E4%B8%96%E7%95%8C%E3%80%8B%E6%9D%82%E8%B0%88/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -293,16 +1187,16 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              <span class="post-meta-item-text">发表于</span>
 
-              <time title="Created: 2020-02-01 21:01:58" itemprop="dateCreated datePublished" datetime="2020-02-01T21:01:58+08:00">2020-02-01</time>
+              <time title="创建时间：2020-02-01 21:01:58" itemprop="dateCreated datePublished" datetime="2020-02-01T21:01:58+08:00">2020-02-01</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-02 20:34:30" itemprop="dateModified" datetime="2020-02-02T20:34:30+08:00">2020-02-02</time>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-02-02 20:34:30" itemprop="dateModified" datetime="2020-02-02T20:34:30+08:00">2020-02-02</time>
               </span>
 
           
@@ -347,7 +1241,7 @@
         
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/30/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA%E4%B9%8B%E4%BA%8C%20%E6%9C%89%E9%99%90%E8%87%AA%E5%8A%A8%E6%9C%BA%E5%92%8C%E5%8F%B3%E7%BA%BF%E6%80%A7%E6%96%87%E6%B3%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -370,16 +1264,16 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              <span class="post-meta-item-text">发表于</span>
 
-              <time title="Created: 2020-01-30 20:06:31" itemprop="dateCreated datePublished" datetime="2020-01-30T20:06:31+08:00">2020-01-30</time>
+              <time title="创建时间：2020-01-30 20:06:31" itemprop="dateCreated datePublished" datetime="2020-01-30T20:06:31+08:00">2020-01-30</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-02 16:28:49" itemprop="dateModified" datetime="2020-02-02T16:28:49+08:00">2020-02-02</time>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-02-10 10:38:17" itemprop="dateModified" datetime="2020-02-10T10:38:17+08:00">2020-02-10</time>
               </span>
 
           
@@ -393,7 +1287,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="（二）有限自动机和右线性文法"><a href="#（二）有限自动机和右线性文法" class="headerlink" title="（二）有限自动机和右线性文法"></a>（二）有限自动机和右线性文法</h1><p>讨论语言，从生成语言的角度可以使用前面定义的文法进行定义，从识别语言的角度可以使用自动机进行定义，而正则式是特殊的对应3型文法的可以直接体现语言的模式。本章讨论3型文法对应的语言，文法角度的右线性文法、左线性文法也即3型文法，识别角度的有限自动机，正则式都是等价的定义。这篇文章的逻辑将是介绍三种定义，证明其等价性，介绍其性质。</p>
+          <h1 id="（二）有限自动机"><a href="#（二）有限自动机" class="headerlink" title="（二）有限自动机"></a>（二）有限自动机</h1><p>讨论语言，从生成语言的角度可以使用前面定义的文法进行定义，从识别语言的角度可以使用自动机进行定义，而正则式是特殊的对应3型文法的可以直接体现语言的模式。本章讨论3型文法对应的语言，文法角度的右线性文法、左线性文法也即3型文法，识别角度的有限自动机，正则式都是等价的定义。这篇文章的逻辑将是介绍三种定义，证明其等价性，介绍其性质。</p>
 <h2 id="有限自动机"><a href="#有限自动机" class="headerlink" title="有限自动机"></a>有限自动机</h2><p>$Def.$有限自动机<br>有限即有限状态，但这里（参考教材）没有定义“有限”，猜测是可列有限的定义。</p>
 <p>$Def.$确定的有限自动机(DFA)<br>后继状态唯一</p>
 <p>$Def.$不确定的有限自动机(NFA)<br>后继状态不唯一</p>
@@ -438,7 +1332,7 @@
         
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/30/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA%E4%B9%8B%E4%B8%80%20%E8%AF%AD%E8%A8%80%E4%B8%8E%E6%96%87%E6%B3%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -461,16 +1355,16 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Posted on</span>
+              <span class="post-meta-item-text">发表于</span>
 
-              <time title="Created: 2020-01-30 10:34:42" itemprop="dateCreated datePublished" datetime="2020-01-30T10:34:42+08:00">2020-01-30</time>
+              <time title="创建时间：2020-01-30 10:34:42" itemprop="dateCreated datePublished" datetime="2020-01-30T10:34:42+08:00">2020-01-30</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-02 20:21:22" itemprop="dateModified" datetime="2020-02-02T20:21:22+08:00">2020-02-02</time>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-02-02 20:21:22" itemprop="dateModified" datetime="2020-02-02T20:21:22+08:00">2020-02-02</time>
               </span>
 
           
@@ -529,97 +1423,12 @@ L^n=L \cdot L^n-1</script></li>
   
   
 
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/29/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E8%AE%BE%E8%AE%A1-%E7%A1%AC%E4%BB%B6%E8%BD%AF%E4%BB%B6%E6%8E%A5%E5%8F%A3%E4%B9%8B%E4%B8%80%20%E5%A4%84%E7%90%86%E5%99%A8/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Beenle Yi">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Beenle's Space">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/29/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E8%AE%BE%E8%AE%A1-%E7%A1%AC%E4%BB%B6%E8%BD%AF%E4%BB%B6%E6%8E%A5%E5%8F%A3%E4%B9%8B%E4%B8%80%20%E5%A4%84%E7%90%86%E5%99%A8/" class="post-title-link" itemprop="url">计算机组成与设计-硬件软件接口之一 处理器</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-01-29 17:43:46" itemprop="dateCreated datePublished" datetime="2020-01-29T17:43:46+08:00">2020-01-29</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-01-31 16:12:08" itemprop="dateModified" datetime="2020-01-31T16:12:08+08:00">2020-01-31</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="设计方法"><a href="#设计方法" class="headerlink" title="设计方法"></a>设计方法</h1><ol>
-<li>确定要设计的指令集</li>
-<li>逐个指令分析，按指令执行流程分析，增加元件、控制命令，完善数据通路</li>
-<li>完成数据通路图的绘制</li>
-<li>确定控制命令成立的条件，建立真值表</li>
-<li></li>
-</ol>
-<h1 id="处理器工作原理"><a href="#处理器工作原理" class="headerlink" title="处理器工作原理"></a>处理器工作原理</h1><h3 id="流水线的思想"><a href="#流水线的思想" class="headerlink" title="流水线的思想"></a>流水线的思想</h3><p>流水线本身是一个伟大的发明，或许处理器这里只是借鉴了工业上的思想。</p>
-<h3 id="冒险"><a href="#冒险" class="headerlink" title="冒险"></a>冒险</h3><p>多种冒险，多种解决方案。</p>
-<ol>
-<li>structural hazard：硬件支持不够，例如若只有一个存储器，而又只支持读或写一个，那么两条指令一个要求读一条要求写，时间又相同时则出现了冒险；</li>
-<li>data hazard：无法及时提供指令所需的数据；解决：<ol>
-<li>Forwarding，在需要的数据存到内存或寄存器之前，从内部存储器提前提出数据给指令；<br>但以上方法不万能，当若遇到load-use data hazard，那就只能阻塞一个stage，称<strong>流水线阻塞</strong>或气泡；</li>
-</ol>
-</li>
-<li>control hazard：指令地址可能要变化，当遇到分支的情况即会产生；<br>解决：<ol>
-<li>等待</li>
-<li>预测，按上一次分支的结果进行预测正确率达90%</li>
-<li>delayed branch，将一条无关指令放到条件分支指令后执行，则避免了做无关事项</li>
-</ol>
-</li>
-</ol>
-<h1 id="心路历程"><a href="#心路历程" class="headerlink" title="心路历程"></a>心路历程</h1><h3 id="2020-01-29"><a href="#2020-01-29" class="headerlink" title="2020-01-29"></a>2020-01-29</h3><p>第二、三章的内容和上学期学习的计算机系统基础课程内容有重复，但一些新的内容又没有理解得很到位，学得十分糟心。一直很难学习这种一知半解的内容，在时间又赶的情况下。</p>
-<p>从第四章开始，期望一边学习一边上vivado写代码。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
   </div>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
 
 
 
@@ -662,10 +1471,10 @@ L^n=L \cdot L^n-1</script></li>
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
-          Table of Contents
+          文章目录
         </li>
         <li class="sidebar-nav-overview">
-          Overview
+          站点概览
         </li>
       </ul>
 
@@ -684,13 +1493,13 @@ L^n=L \cdot L^n-1</script></li>
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
-          <span class="site-state-item-name">posts</span>
+          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">tags</span>
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span>
       </div>
   </nav>
 </div>
@@ -698,6 +1507,10 @@ L^n=L \cdot L^n-1</script></li>
 
 
       </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
 
     </div>
   </aside>
@@ -720,10 +1533,10 @@ L^n=L \cdot L^n-1</script></li>
   </span>
   <span class="author" itemprop="copyrightHolder">Beenle Yi</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
   </div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">Theme – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.7.0
+  <div class="theme-info">主题 – <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.7.0
   </div>
 
         
@@ -749,7 +1562,7 @@ L^n=L \cdot L^n-1</script></li>
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 
 
 <script src="/js/next-boot.js"></script>
