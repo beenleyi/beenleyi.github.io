@@ -48,12 +48,12 @@
 
 <link href="https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css" rel="stylesheet">
 
-  <meta name="description" content="basicstwo questions to solve:  how to know if a data item exists in the cache?directed mapped how to know whether the data in the cache is what we want?a tag contains the upper portion of the addressa">
+  <meta name="description" content="basics two questions to solve:  how to know if a data item exists in the cache? directed mapped how to know whether the data in the cache is what we want? a tag contains the upper portion of the addr">
 <meta property="og:type" content="article">
 <meta property="og:title" content="计算机组成与设计-硬件软件接口 cache">
 <meta property="og:url" content="http://beenleyi.github.io/2020/03/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E8%AE%BE%E8%AE%A1-%E7%A1%AC%E4%BB%B6%E8%BD%AF%E4%BB%B6%E6%8E%A5%E5%8F%A3%20cache/index.html">
 <meta property="og:site_name" content="Beenle&#39;s Space">
-<meta property="og:description" content="basicstwo questions to solve:  how to know if a data item exists in the cache?directed mapped how to know whether the data in the cache is what we want?a tag contains the upper portion of the addressa">
+<meta property="og:description" content="basics two questions to solve:  how to know if a data item exists in the cache? directed mapped how to know whether the data in the cache is what we want? a tag contains the upper portion of the addr">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-03-02T04:57:53.484Z">
 <meta property="article:modified_time" content="2020-03-24T01:36:49.029Z">
@@ -237,12 +237,16 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="basics"><a href="#basics" class="headerlink" title="basics"></a>basics</h1><p>two questions to solve:</p>
+        <h1 id="basics"><a class="markdownIt-Anchor" href="#basics"></a> basics</h1>
+<p>two questions to solve:</p>
 <ol>
-<li>how to know if a data item exists in the cache?<br><code>directed mapped</code></li>
-<li>how to know whether the data in the cache is what we want?<br>a tag contains the upper portion of the address<br>add a <code>valid bit</code> to each block in the cache</li>
+<li>how to know if a data item exists in the cache?<br />
+<code>directed mapped</code></li>
+<li>how to know whether the data in the cache is what we want?<br />
+a tag contains the upper portion of the address<br />
+add a <code>valid bit</code> to each block in the cache</li>
 </ol>
-<h2 id="accessing"><a href="#accessing" class="headerlink" title="accessing"></a>accessing</h2><div class="table-container">
+<h2 id="accessing"><a class="markdownIt-Anchor" href="#accessing"></a> accessing</h2>
 <table>
 <thead>
 <tr>
@@ -261,43 +265,55 @@
 </tr>
 </tbody>
 </table>
-</div>
-<h3 id="about-the-block-size"><a href="#about-the-block-size" class="headerlink" title="about the block size"></a>about the block size</h3><p>block size增大，miss rate会降低，但当增大很多时，由于blocks的数目会随之减少（cache的总大小不变），那么blocks的竞争会变大，而且前面设计的初衷spatial locality体现不大（blocks太大了，很多情况下无关区域的数据也进入了）；</p>
+<h3 id="about-the-block-size"><a class="markdownIt-Anchor" href="#about-the-block-size"></a> about the block size</h3>
+<p>block size增大，miss rate会降低，但当增大很多时，由于blocks的数目会随之减少（cache的总大小不变），那么blocks的竞争会变大，而且前面设计的初衷spatial locality体现不大（blocks太大了，很多情况下无关区域的数据也进入了）；</p>
 <p>再者，miss penalty也增大，因为若是miss，则要移到cache里的数据变多了。</p>
 <p>一些解决方法：</p>
 <ol>
 <li>early returned 一旦需要的数据移到cache里后，立即返回执行，而不是等到整个block的数据都移入完毕。这种方法在instruction access中表现良好，但在普通的data获取时表现一般，因为data的位置太过随机，很可能出现还没有transfer完毕，处理器又需要别的数据，如果这两者无法同时进行，那么就需要stall了</li>
 <li>requested word first or critical word first 先transfer需要的字，再从该字的地址往后transfer，然后回到该block的第一个地址继续下去transfer，跟early returned有相同的问题</li>
 </ol>
-<h2 id="write"><a href="#write" class="headerlink" title="write"></a>write</h2><h3 id="write-through-scheme"><a href="#write-through-scheme" class="headerlink" title="write-through scheme"></a>write-through scheme</h3><p>use a write buffer, write into cache and write buffer. The write buffer write into the memory when execution.</p>
-<h3 id="write-back"><a href="#write-back" class="headerlink" title="write-back"></a>write-back</h3><p>only write into cache and when it is replaced it write into the lower level of the hierarchy.</p>
+<h2 id="write"><a class="markdownIt-Anchor" href="#write"></a> write</h2>
+<h3 id="write-through-scheme"><a class="markdownIt-Anchor" href="#write-through-scheme"></a> write-through scheme</h3>
+<p>use a write buffer, write into cache and write buffer. The write buffer write into the memory when execution.</p>
+<h3 id="write-back"><a class="markdownIt-Anchor" href="#write-back"></a> write-back</h3>
+<p>only write into cache and when it is replaced it write into the lower level of the hierarchy.</p>
 <p>elaboration？</p>
-<h2 id="example"><a href="#example" class="headerlink" title="example"></a>example</h2><p>two methods: combined the instructions and data cache ; split cache(two cache operate in parallel). The former one have a higher hit rate while the latter one have a wider cache bandwidth. THe miss rate is not the solo measure of cache performance.</p>
-<h2 id="designing-the-memory-system-to-support-caches"><a href="#designing-the-memory-system-to-support-caches" class="headerlink" title="designing the memory system to support caches"></a>designing the memory system to support caches</h2><ol>
+<h2 id="example"><a class="markdownIt-Anchor" href="#example"></a> example</h2>
+<p>two methods: combined the instructions and data cache ; split cache(two cache operate in parallel). The former one have a higher hit rate while the latter one have a wider cache bandwidth. THe miss rate is not the solo measure of cache performance.</p>
+<h2 id="designing-the-memory-system-to-support-caches"><a class="markdownIt-Anchor" href="#designing-the-memory-system-to-support-caches"></a> designing the memory system to support caches</h2>
+<ol>
 <li>one-word-wide memory organization</li>
 <li>wider memory organization</li>
 <li>interleaved memory organization</li>
 </ol>
-<h1 id="measuring-and-improving-cache-performance"><a href="#measuring-and-improving-cache-performance" class="headerlink" title="measuring and improving cache performance"></a>measuring and improving cache performance</h1><p>two technique: </p>
+<h1 id="measuring-and-improving-cache-performance"><a class="markdownIt-Anchor" href="#measuring-and-improving-cache-performance"></a> measuring and improving cache performance</h1>
+<p>two technique:</p>
 <ol>
 <li>reducing the miss rate</li>
 <li>reducing the miss penalty</li>
 </ol>
 <p>in most write-through cache organization, the read and write miss penalties are the same. So</p>
-<script type="math/tex; mode=display">
 Memory-stall clock cycles=\frac{Instructions}{programs}*\frac{Misses}{Instructions}*Miss penalty
 \\
-Memory-stall clock cycles=\frac{Memory accesses}{programs}*{Miss rate}*Miss penalty</script><p>平均内存获取时间</p>
-<script type="math/tex; mode=display">
-average\ memory\ access\ time = time\ for\ a\ hit + Miss\ rate * Miss\ penalty</script><h4 id="reducing-cache-misses-by-more-flexible-placement-of-blocks"><a href="#reducing-cache-misses-by-more-flexible-placement-of-blocks" class="headerlink" title="reducing cache misses by more flexible placement of blocks"></a>reducing cache misses by more flexible placement of blocks</h4><ol>
-<li><p><code>direct mapped</code> cache中唯一一个block可能是想要的数据</p>
+Memory-stall clock cycles=\frac{Memory accesses}{programs}*{Miss rate}*Miss penalty
+
+<p>平均内存获取时间</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mi>v</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>g</mi><mi>e</mi><mtext> </mtext><mi>m</mi><mi>e</mi><mi>m</mi><mi>o</mi><mi>r</mi><mi>y</mi><mtext> </mtext><mi>a</mi><mi>c</mi><mi>c</mi><mi>e</mi><mi>s</mi><mi>s</mi><mtext> </mtext><mi>t</mi><mi>i</mi><mi>m</mi><mi>e</mi><mo>=</mo><mi>t</mi><mi>i</mi><mi>m</mi><mi>e</mi><mtext> </mtext><mi>f</mi><mi>o</mi><mi>r</mi><mtext> </mtext><mi>a</mi><mtext> </mtext><mi>h</mi><mi>i</mi><mi>t</mi><mo>+</mo><mi>M</mi><mi>i</mi><mi>s</mi><mi>s</mi><mtext> </mtext><mi>r</mi><mi>a</mi><mi>t</mi><mi>e</mi><mo>∗</mo><mi>M</mi><mi>i</mi><mi>s</mi><mi>s</mi><mtext> </mtext><mi>p</mi><mi>e</mi><mi>n</mi><mi>a</mi><mi>l</mi><mi>t</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">average\ memory\ access\ time = time\ for\ a\ hit + Miss\ rate * Miss\ penalty
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="mord mathit">e</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">e</span><span class="mord mspace"> </span><span class="mord mathit">m</span><span class="mord mathit">e</span><span class="mord mathit">m</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mord mspace"> </span><span class="mord mathit">a</span><span class="mord mathit">c</span><span class="mord mathit">c</span><span class="mord mathit">e</span><span class="mord mathit">s</span><span class="mord mathit">s</span><span class="mord mspace"> </span><span class="mord mathit">t</span><span class="mord mathit">i</span><span class="mord mathit">m</span><span class="mord mathit">e</span><span class="mrel">=</span><span class="mord mathit">t</span><span class="mord mathit">i</span><span class="mord mathit">m</span><span class="mord mathit">e</span><span class="mord mspace"> </span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord mathit">o</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mspace"> </span><span class="mord mathit">a</span><span class="mord mspace"> </span><span class="mord mathit">h</span><span class="mord mathit">i</span><span class="mord mathit">t</span><span class="mbin">+</span><span class="mord mathit" style="margin-right:0.10903em;">M</span><span class="mord mathit">i</span><span class="mord mathit">s</span><span class="mord mathit">s</span><span class="mord mspace"> </span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">a</span><span class="mord mathit">t</span><span class="mord mathit">e</span><span class="mbin">∗</span><span class="mord mathit" style="margin-right:0.10903em;">M</span><span class="mord mathit">i</span><span class="mord mathit">s</span><span class="mord mathit">s</span><span class="mord mspace"> </span><span class="mord mathit">p</span><span class="mord mathit">e</span><span class="mord mathit">n</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">t</span><span class="mord mathit" style="margin-right:0.03588em;">y</span></span></span></span></span></p>
+<h4 id="reducing-cache-misses-by-more-flexible-placement-of-blocks"><a class="markdownIt-Anchor" href="#reducing-cache-misses-by-more-flexible-placement-of-blocks"></a> reducing cache misses by more flexible placement of blocks</h4>
+<ol>
+<li>
+<p><code>direct mapped</code> cache中唯一一个block可能是想要的数据</p>
 </li>
-<li><p><code>fully associative cache</code> cache中任何一个block都可能是</p>
+<li>
+<p><code>fully associative cache</code> cache中任何一个block都可能是</p>
 </li>
-<li><code>n-way set-associative cache</code> cache中n个block可能是想要的数据，n个block组成一组称为set</li>
+<li>
+<p><code>n-way set-associative cache</code> cache中n个block可能是想要的数据，n个block组成一组称为set</p>
+</li>
 </ol>
 <p>显然第三种，可以增加hit rate，但也增加了hit time</p>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -324,20 +340,24 @@ average\ memory\ access\ time = time\ for\ a\ hit + Miss\ rate * Miss\ penalty</
 </tr>
 </tbody>
 </table>
-</div>
-<h4 id="locating-a-block-in-the-cache"><a href="#locating-a-block-in-the-cache" class="headerlink" title="locating a block in the cache"></a>locating a block in the cache</h4><p>使用 n-way set-associative 意味着</p>
+<h4 id="locating-a-block-in-the-cache"><a class="markdownIt-Anchor" href="#locating-a-block-in-the-cache"></a> locating a block in the cache</h4>
+<p>使用 n-way set-associative 意味着</p>
 <ol>
 <li>地址随之改变，tag会增位，index会减位</li>
 <li>需要在set内进行比较各个block的tag，可以使用并行比较</li>
 <li>需要multiplexor</li>
 </ol>
 <p>这里elaboration看不懂 <code>content addressable memory</code></p>
-<h4 id="choosing-which-block-to-replace"><a href="#choosing-which-block-to-replace" class="headerlink" title="choosing which block to replace"></a>choosing which block to replace</h4><p>LRU:  least recently used 替换掉最久没有使用的一个</p>
-<h4 id="二级cache"><a href="#二级cache" class="headerlink" title="二级cache"></a>二级cache</h4><p>有了两级cache，就可以将第一级的重心放在reduce hit time，第二级中心放在reduce miss rate</p>
-<h1 id="virtual-memory"><a href="#virtual-memory" class="headerlink" title="virtual memory"></a>virtual memory</h1><p>将main memory作为二级cache</p>
+<h4 id="choosing-which-block-to-replace"><a class="markdownIt-Anchor" href="#choosing-which-block-to-replace"></a> choosing which block to replace</h4>
+<p>LRU:  least recently used 替换掉最久没有使用的一个</p>
+<h4 id="二级cache"><a class="markdownIt-Anchor" href="#二级cache"></a> 二级cache</h4>
+<p>有了两级cache，就可以将第一级的重心放在reduce hit time，第二级中心放在reduce miss rate</p>
+<h1 id="virtual-memory"><a class="markdownIt-Anchor" href="#virtual-memory"></a> virtual memory</h1>
+<p>将main memory作为二级cache</p>
 <p>page table : map virtual to physical address; stored in memory; indexed by the virtual page number.</p>
 <p>每个进程有一个page table；操作系统加载一个进程的状态信息，则继续执行一个进程。</p>
-<h1 id="common-architecture"><a href="#common-architecture" class="headerlink" title="common architecture"></a>common architecture</h1>
+<h1 id="common-architecture"><a class="markdownIt-Anchor" href="#common-architecture"></a> common architecture</h1>
+
     </div>
 
     
@@ -418,7 +438,7 @@ average\ memory\ access\ time = time\ for\ a\ hit + Miss\ rate * Miss\ penalty</
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#basics"><span class="nav-number">1.</span> <span class="nav-text">basics</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#accessing"><span class="nav-number">1.1.</span> <span class="nav-text">accessing</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#about-the-block-size"><span class="nav-number">1.1.1.</span> <span class="nav-text">about the block size</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#write"><span class="nav-number">1.2.</span> <span class="nav-text">write</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#write-through-scheme"><span class="nav-number">1.2.1.</span> <span class="nav-text">write-through scheme</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#write-back"><span class="nav-number">1.2.2.</span> <span class="nav-text">write-back</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#example"><span class="nav-number">1.3.</span> <span class="nav-text">example</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#designing-the-memory-system-to-support-caches"><span class="nav-number">1.4.</span> <span class="nav-text">designing the memory system to support caches</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#measuring-and-improving-cache-performance"><span class="nav-number">2.</span> <span class="nav-text">measuring and improving cache performance</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#reducing-cache-misses-by-more-flexible-placement-of-blocks"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">reducing cache misses by more flexible placement of blocks</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#locating-a-block-in-the-cache"><span class="nav-number">2.0.0.2.</span> <span class="nav-text">locating a block in the cache</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#choosing-which-block-to-replace"><span class="nav-number">2.0.0.3.</span> <span class="nav-text">choosing which block to replace</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二级cache"><span class="nav-number">2.0.0.4.</span> <span class="nav-text">二级cache</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#virtual-memory"><span class="nav-number">3.</span> <span class="nav-text">virtual memory</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#common-architecture"><span class="nav-number">4.</span> <span class="nav-text">common architecture</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#basics"><span class="nav-number">1.</span> <span class="nav-text"> basics</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#accessing"><span class="nav-number">1.1.</span> <span class="nav-text"> accessing</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#about-the-block-size"><span class="nav-number">1.1.1.</span> <span class="nav-text"> about the block size</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#write"><span class="nav-number">1.2.</span> <span class="nav-text"> write</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#write-through-scheme"><span class="nav-number">1.2.1.</span> <span class="nav-text"> write-through scheme</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#write-back"><span class="nav-number">1.2.2.</span> <span class="nav-text"> write-back</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#example"><span class="nav-number">1.3.</span> <span class="nav-text"> example</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#designing-the-memory-system-to-support-caches"><span class="nav-number">1.4.</span> <span class="nav-text"> designing the memory system to support caches</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#measuring-and-improving-cache-performance"><span class="nav-number">2.</span> <span class="nav-text"> measuring and improving cache performance</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#reducing-cache-misses-by-more-flexible-placement-of-blocks"><span class="nav-number">2.0.0.1.</span> <span class="nav-text"> reducing cache misses by more flexible placement of blocks</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#locating-a-block-in-the-cache"><span class="nav-number">2.0.0.2.</span> <span class="nav-text"> locating a block in the cache</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#choosing-which-block-to-replace"><span class="nav-number">2.0.0.3.</span> <span class="nav-text"> choosing which block to replace</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二级cache"><span class="nav-number">2.0.0.4.</span> <span class="nav-text"> 二级cache</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#virtual-memory"><span class="nav-number">3.</span> <span class="nav-text"> virtual memory</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#common-architecture"><span class="nav-number">4.</span> <span class="nav-text"> common architecture</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -437,7 +457,7 @@ average\ memory\ access\ time = time\ for\ a\ hit + Miss\ rate * Miss\ penalty</
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">1</span>
         <span class="site-state-item-name">标签</span>
       </div>
   </nav>
